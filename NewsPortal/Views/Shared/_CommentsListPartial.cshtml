@@ -1,0 +1,5 @@
+﻿@model IEnumerable<NewsPortal.ViewModels.CommentViewModel>
+@foreach (var item in Model)
+{
+    @Html.Partial("_CommentPartial", item)
+}

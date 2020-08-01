@@ -1,0 +1,37 @@
+﻿@using NewsPortal.CustomHtmlHelpers;
+@model NewsPortal.ViewModels.CommentViewModel
+
+    <div class="comment">
+        @if (Url.Action().ToLower().Contains("admin"))
+        {
+            <!--<button class="btn btn-danger pull-right" id="buttonDelete">Delete</button>
+        <div class="hide pull-right" id="divHide">
+            <br />
+            <p class="text-center">Confirmed</p>
+            @Html.ActionLink(Resources.Resource.Delete, "DeleteComment", "Comment", new { commentId = Model.Id, newsId = Model.NewsId },
+           new { onclick = $"return confirm('{Resources.Resource.ConfirmDeleteComment}')", @class = "btn btn-danger" })
+            <button class="btn btn-default" id="buttonCancel">Cancel</button>
+        </div>
+            -->
+            @Html.ActionLink(Resources.Resource.Delete, "DeleteComment", "Comment", new { commentId = Model.Id, newsId = Model.NewsId },
+               new { onclick = $"return confirm('{Resources.Resource.ConfirmDeleteComment}')", @class = "btn btn-danger pull-right" })
+        }
+        <p class="name">@Model.Author</p>
+        <p class="text">@Model.Text</p>
+        <p class="date">@Html.Date(Model.CreationDate)</p>
+    </div>
+<!--
+<script>
+    var buttonDelete = document.querySelector("#buttonDelete");
+    buttonDelete.addEventListener("click", function () {
+        var divHide = document.querySelector("#divHide");
+        divHide.classList.remove("hide");
+    });
+
+    var buttonCancel = document.querySelector("#buttonCancel");
+    buttonCancel.addEventListener("click", function () {
+        var divHide = document.querySelector("#divHide");
+        divHide.classList.add("hide");
+    });
+</script>
+    -->

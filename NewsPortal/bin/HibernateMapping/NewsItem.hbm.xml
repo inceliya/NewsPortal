@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="true"
+                   assembly="NewsPortal.BLL"
+                   namespace="NewsPortal.BLL.Entities">
+
+  <class name="NewsItem" lazy="false">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <property name="Title"/>
+    <property name="Description"/>
+    <property name="Image"/>
+    <property name="PublicationDate"/>
+    <property name="Visibility"/>
+    <!--<bag name="Comments"
+         lazy="false"
+         inverse="true"
+         cascade="all-delete-orphan">
+      <key column="NewsId"/>
+      <one-to-many class="CommentDTO"></one-to-many>
+    </bag>-->
+  </class>
+</hibernate-mapping>

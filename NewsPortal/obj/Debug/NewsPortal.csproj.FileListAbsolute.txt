@@ -1,0 +1,535 @@
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\hibernate.cfg.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\HibernateMapping\News.hbm.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\NewsPortal.dll.config
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\NewsPortal.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\NewsPortal.pdb
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\csc.exe
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\csc.exe.config
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\csc.rsp
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\csi.exe
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\csi.exe.config
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\csi.rsp
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.AppContext.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Collections.Immutable.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Console.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.IO.Compression.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Security.AccessControl.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Security.Claims.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.ValueTuple.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\vbc.exe
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\vbc.exe.config
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\vbc.rsp
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe.config
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Antlr3.Runtime.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Iesi.Collections.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Microsoft.Web.Infrastructure.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Newtonsoft.Json.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\NHibernate.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.Helpers.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.Mvc.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.Optimization.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.Razor.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.WebPages.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\WebGrease.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Iesi.Collections.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\NHibernate.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.Helpers.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.Mvc.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.Optimization.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.Razor.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.WebPages.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Newtonsoft.Json.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Antlr3.Runtime.pdb
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\ru\System.Web.Helpers.resources.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\ru\System.Web.Mvc.resources.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\ru\System.Web.Optimization.resources.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\ru\System.Web.Razor.resources.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.resources.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csprojAssemblyReference.cache
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CoreCompileInputs.cache
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CopyComplete
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.dll
+D:\Новая папка\NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\News.hbm.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\hibernate.cfg.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll.config
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.pdb
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe.config
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.rsp
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe.config
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.rsp
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.AppContext.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Console.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Compression.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Claims.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.ValueTuple.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe.config
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.rsp
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\WebGrease.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.pdb
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Razor.resources.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csprojAssemblyReference.cache
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CoreCompileInputs.cache
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CopyComplete
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csprojAssemblyReference.cache
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CoreCompileInputs.cache
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\News.hbm.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\hibernate.cfg.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll.config
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.pdb
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe.config
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.rsp
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe.config
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.rsp
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.AppContext.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Collections.Immutable.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Console.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Compression.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.AccessControl.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Claims.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.ValueTuple.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe.config
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.rsp
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe.config
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.Web.Infrastructure.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\WebGrease.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.pdb
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Helpers.resources.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Mvc.resources.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Optimization.resources.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Razor.resources.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.resources.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\News.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\hibernate.cfg.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.AppContext.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Collections.Immutable.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Console.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Compression.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.AccessControl.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Claims.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.ValueTuple.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.Web.Infrastructure.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\WebGrease.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Helpers.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Mvc.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Optimization.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Razor.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Rep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\News.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\hibernate.cfg.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.AppContext.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Collections.Immutable.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Console.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Compression.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.AccessControl.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Claims.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.ValueTuple.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.Web.Infrastructure.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\WebGrease.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Helpers.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Mvc.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Optimization.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Razor.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
+D:\Новая папка\NewsPortal\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\Comment.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newrep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\Comment.hbm.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\Comment.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\News.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\HibernateMapping\Comment.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\hibernate.cfg.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NewsPortal.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csc.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\csi.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.AppContext.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Collections.Immutable.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Console.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Compression.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.IO.Pipes.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.AccessControl.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Claims.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.ValueTuple.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\vbc.rsp
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\roslyn\VBCSCompiler.exe.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.Web.Infrastructure.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\WebGrease.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Iesi.Collections.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\NHibernate.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Helpers.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Mvc.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Optimization.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.Razor.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Deployment.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Newtonsoft.Json.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Antlr3.Runtime.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Helpers.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Mvc.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Optimization.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.Razor.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reprep\NewsPortalNhibernate\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb

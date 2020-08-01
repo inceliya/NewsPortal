@@ -1,0 +1,49 @@
+﻿@using NewsPortal.CustomHtmlHelpers;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPortal - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top minnav">
+        <div class="container">
+
+            @Html.ActionLink("NewsPortal", "Index", ViewContext.RouteData.Values["controller"].ToString(), new { area = "" }, new { @class = "navbar-brand" })
+            <div class="flag pull-right">
+                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "uk" })">
+                    <img width="30" src="~/Resources/Icons/iconfinder_Flag_of_Ukraine_96351.png" alt="uk" />
+                </a>
+                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "en" })">
+                    <img width="30" src="~/Resources/Icons/iconfinder_Flag_of_United_States_96220.png" alt="en" />
+                </a>
+                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "ru" })">
+                    <img width="30" src="~/Resources/Icons/iconfinder_Flag_of_Russia_96241.png" alt="ru" />
+                </a>
+            </div>
+
+            <input id="search" class="form-control search nav pull-right navbar-nav" type="text" placeholder="@Resources.Resource.Search" aria-label="Search">
+        </div>
+    </div>
+    <div class="container body-content">
+
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year – News Portal</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/custom")
+    @RenderSection("scripts", required: false)
+    <div id="loader" data-sort="@Request.Params["sort"]" data-reverse="@Request.Params["reverse"]" data-view="@ViewContext.RouteData.GetRequiredString("action")" data-index="@Url.Action("Index","News")" data-request="@Html.IndexUrl(Request, "search", ".")"></div>
+    <div id="lang" data-new-first="@Resources.Resource.NewFirst" data-old-first="@Resources.Resource.OldFirst" data-title-a-z="@Resources.Resource.TitleAZ" data-title-z-a="@Resources.Resource.TitleZA" data-desc-a-z="@Resources.Resource.DescriptionAZ" data-desc-z-a="@Resources.Resource.DescriptionZA"></div>
+</body>
+</html>

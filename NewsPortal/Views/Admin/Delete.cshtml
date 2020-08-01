@@ -1,0 +1,25 @@
+﻿@model NewsPortal.ViewModels.NewsViewModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+<div>
+    <h4>News</h4>
+    <hr />
+    @Html.Partial("_NewsPreview", Model)
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color display-flex">
+            <h3 class="text-danger">Are you sure you want to delete this?</h3>
+            <div>
+                <input type="submit" value="@Resources.Resource.Delete" class="btn btn-danger" />
+                @Html.ActionLink(Resources.Resource.Cancel, "Index", @ViewContext.RouteData.Values["controller"].ToString(), new { @class = "btn btn-primary" })
+            </div>
+        </div>
+    }
+</div>

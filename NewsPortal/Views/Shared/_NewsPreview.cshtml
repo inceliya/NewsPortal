@@ -1,0 +1,22 @@
+﻿@using NewsPortal.CustomHtmlHelpers;
+@model NewsPortal.ViewModels.NewsViewModel
+
+<div class="news-item">
+    <div>
+        <img src="@Model.Image" alt="@Resources.Resource.Image" />
+    </div>
+    <div>@Html.ActionLink((Model.Title.Length > 75 ? Model.Title.Substring(0, 75) + "..." : Model.Title), "Details", new { id = Model.Id })</div>
+    <div>@Html.Date(Model.PublicationDate)</div>
+    <div>
+        @Html.Raw(Model.Description.Length > 700 ? Model.Description.Substring(0, 700) + "..." : Model.Description)
+    </div>
+    @if (ViewContext.RouteData.Values["controller"].ToString().ToLower() == "admin" && ViewContext.RouteData.Values["action"].ToString().ToLower() == "index")
+    {
+        <div>
+            @Html.ActionLink(Resources.Resource.Edit, "Edit", new { Id = Model.Id }, new { @class = "btn btn-info" })
+            @Html.ActionLink(Resources.Resource.Delete, "Delete", new { Id = Model.Id }, new { @class = "btn btn-danger" })
+            @*<div class="btn btn-default disabled">Visibility: @(Model.Visibility == true ? "true" : "false")</div>*@
+        </div>
+    }
+
+</div>

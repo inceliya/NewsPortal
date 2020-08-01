@@ -1,0 +1,24 @@
+﻿@model NewsPortal.ViewModels.IndexViewModel
+@using NewsPortal.Helpers;
+
+
+@foreach (var item in Model.NewsViewModels)
+{
+    if (@ViewContext.RouteData.Values["controller"].ToString().ToLower() == "admin")
+    {
+        @Html.Partial("_NewsPreview", item);
+    }
+    else if (item.Visibility)
+    {
+        @Html.Partial("_NewsPreview", item);
+    }
+    else
+    {
+
+    }
+
+}
+
+    <div class="btn-group">
+        @Html.PageLinks(Model.PageInfo, x => Url.Action("Index", new { page = x, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }))
+    </div>

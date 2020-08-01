@@ -1,0 +1,131 @@
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\Comment.hbm.xml
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\News.hbm.xml
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\hibernate.cfg.xml
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.pdb
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.dll
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.dll
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.Bussines.dll
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.dll
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.dll
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.Bussines.pdb
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.xml
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.xml
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.xml
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.xml
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csprojAssemblyReference.cache
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CoreCompileInputs.cache
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
+D:\Новая папка\NewsPortal\newsportalnhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\Comment.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\News.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\hibernate.cfg.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.Bussines.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.Bussines.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\repp\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll.config
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.pdb
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csprojAssemblyReference.cache
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CoreCompileInputs.cache
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\Comment.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\News.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\hibernate.cfg.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.Bussines.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.Bussines.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\reph\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\Comment.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\News.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.Bussines.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.Bussines.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\newsrep\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\Comment.hbm.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\hibernate.cfg.xml
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.dll
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.pdb
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.dll.config
+C:\Users\nikos\source\repos\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\NewsItem.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\Comment.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\HibernateMapping\NewsItem.hbm.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\hibernate.cfg.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.dll.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb

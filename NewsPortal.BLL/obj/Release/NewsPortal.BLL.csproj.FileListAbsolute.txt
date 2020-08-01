@@ -1,0 +1,9 @@
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\bin\Release\NewsPortal.BLL.dll.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\bin\Release\NewsPortal.BLL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\bin\Release\NewsPortal.BLL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\bin\Release\AutoMapper.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\bin\Release\AutoMapper.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\obj\Release\NewsPortal.BLL.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\obj\Release\NewsPortal.BLL.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\obj\Release\NewsPortal.BLL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\obj\Release\NewsPortal.BLL.pdb

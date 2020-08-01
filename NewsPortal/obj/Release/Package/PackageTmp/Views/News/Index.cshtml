@@ -1,0 +1,68 @@
+﻿@using NewsPortal.CustomHtmlHelpers;
+@{
+    ViewBag.Title = "Home";
+}
+@model NewsPortal.ViewModels.IndexViewModel
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="create-button pull-left">
+                @if (@ViewContext.RouteData.Values["controller"].ToString().ToLower() == "admin")
+                {
+                    @Html.ActionLink(Resources.Resource.Create, "Create", ViewContext.RouteData.Values["controller"], new { @class = "btn btn-success" })
+                }
+            </div>
+            <div class="filters pull-left">
+                <ul>
+                    @Resources.Resource.Filters :
+                    <li><a id="filterToday" href="@Html.IndexUrl(Request, "filter", "today")">@Resources.Resource.Today</a></li>
+                    <li><a id="filterYesterday" href="@Html.IndexUrl(Request, "filter", "yesterday")">@Resources.Resource.Yesterday</a></li>
+                    <li><a id="filterWeek" href="@Html.IndexUrl(Request, "filter", "week")">@Resources.Resource.ThisWeek</a></li>
+                    <li><a id="filterAll" href="@Html.IndexUrl(Request, "filter", "all")">@Resources.Resource.All</a></li>
+                </ul>
+            </div>
+            <div class="sort pull-right">
+                <div class="dropdown">
+                    @Resources.Resource.SortBy :
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        @Resources.Resource.NewFirst
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li>
+                            <a id="sortDate" name="sorting" href="@Html.IndexUrl(Request, "sort", "date", true)">@Resources.Resource.NewFirst</a>
+                        </li>
+                        <li>
+                            <a id="sortTitle" name="sorting" href="@Html.IndexUrl(Request, "sort", "title", false)">@Resources.Resource.TitleAZ</a>
+                        </li>
+                        <li>
+                            <a id="sortDescription" name="sorting" href="@Html.IndexUrl(Request, "sort", "description", false)">@Resources.Resource.DescriptionAZ</a>
+                        </li>
+                        <li>
+                            <a id="sortDateReverse" name="sorting" href="@Html.IndexUrl(Request, "sort", "date", false)">@Resources.Resource.OldFirst</a>
+                        </li>
+                        <li>
+                            <a id="sortTitleReverse" name="sorting" href="@Html.IndexUrl(Request, "sort", "title", true)">@Resources.Resource.TitleZA</a>
+                        </li>
+                        <li>
+                            <a id="sortDescriptionReverse" name="sorting" href="@Html.IndexUrl(Request, "sort", "description", true)">@Resources.Resource.DescriptionZA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="row">
+            <div>
+                @if (Request.Params["search"] != null)
+                {
+                    <p>Search results for: "@Request.Params["search"]"</p>
+                }
+            </div>
+            @Html.Partial("_NewsListPartial", Model)
+            <!--<div id="searchHelper" data-route="@Request.Params["search"]" data-filter="@Request.Params["filter"]" data-reverse="@Request.Params["reverse"]" data-sort="@Request.Params["sort"]"></div>
+            <div class="news-container">
+            </div>-->
+        </div>
+    </div>
+</div>
