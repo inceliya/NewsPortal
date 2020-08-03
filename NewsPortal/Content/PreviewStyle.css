@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: column;
 }
-
+.shadow {
+    background-image: url("https://image.flaticon.com/icons/png/128/60/60053.png?ga=GA1.2.725825701.1594857600%22"); 
+    background-repeat:no-repeat;
+    background-position: center;
+}
 .news-item {
     margin: 5px 0;
     padding: 10px;
