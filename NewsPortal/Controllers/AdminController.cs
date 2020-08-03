@@ -114,9 +114,15 @@ namespace NewsPortal.Controllers
         {
             if (newsImg != null && !string.IsNullOrEmpty(newsImg.FileName))
             {
+                
                 var fileName = Guid.NewGuid().ToString() + Path.GetFileName(newsImg.FileName);
                 var directoryToSave = Server.MapPath(Url.Content("~/Pictures"));
-
+                if(!string.IsNullOrEmpty(newsItemViewModel.Image))
+                {
+                    Directory.GetCurrentDirectory();
+                    if (System.IO.File.Exists(directoryToSave+"\\"+ newsItemViewModel.Image.Replace("/Pictures/", "")))
+                        System.IO.File.Delete(directoryToSave +"\\"+ newsItemViewModel.Image.Replace("/Pictures/", ""));
+                }
                 var pathToSave = Path.Combine(directoryToSave, fileName);
                 newsImg.SaveAs(pathToSave);
                 newsItemViewModel.Image = "/Pictures/" + fileName;
