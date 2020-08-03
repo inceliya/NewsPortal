@@ -3,12 +3,15 @@
 
 <div class="news-item">
     <div>
+        @if (Model.Image != null)
+        {
         <img src="@Model.Image" alt="@Resources.Resource.Image" />
+        }
     </div>
     <div>@Html.ActionLink((Model.Title.Length > 75 ? Model.Title.Substring(0, 75) + "..." : Model.Title), "Details", new { id = Model.Id })</div>
     <div>@Html.Date(Model.PublicationDate)</div>
     <div>
-        @Html.Raw(Model.Description.Length > 700 ? Model.Description.Substring(0, 700) + "..." : Model.Description)
+        @Html.Raw(Model.GetText().Length > 700 ? Model.GetText().Substring(0, 700) + "..." : Model.GetText())
     </div>
     @if (ViewContext.RouteData.Values["controller"].ToString().ToLower() == "admin" && ViewContext.RouteData.Values["action"].ToString().ToLower() == "index")
     {

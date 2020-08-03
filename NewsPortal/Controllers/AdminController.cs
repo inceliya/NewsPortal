@@ -88,7 +88,8 @@ namespace NewsPortal.Controllers
                 return RedirectToAction("Index");
             }
 
-            return View(newsItemViewModel);
+            return View("Error");
+
         }
 
         [HttpGet]

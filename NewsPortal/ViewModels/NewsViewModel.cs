@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -21,6 +22,7 @@ namespace NewsPortal.ViewModels
         [AllowHtml]
         [Required(ErrorMessageResourceType = typeof(Resources.Resource),
             ErrorMessageResourceName = "DescriptionRequired")]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         public string Image { get; set; }
@@ -67,6 +69,20 @@ namespace NewsPortal.ViewModels
             }
 
             Comments = commentsViewModel;
+        }
+
+        public virtual string GetText()
+        {
+            string text = Description;
+            Regex r = new Regex(@"<[^>]*>");
+            MatchCollection matches = r.Matches(text);
+            for (int i = 0; i < matches.Count; i++)
+            {
+                int index = text.IndexOf(matches[i].Value.ToString());
+                text = text.Remove(index, matches[i].Value.Length);
+
+            }
+            return text;
         }
     }
 }
