@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsPortal.DAL", "NewsPorta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsPortal.BLL", "NewsPortal.BLL\NewsPortal.BLL.csproj", "{F6248031-E790-4A25-A2BD-05370A9AE140}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsPortal.DAL.Xml", "NewsPortal.DAL.Xml\NewsPortal.DAL.Xml.csproj", "{581959BB-F11D-48B4-9842-5727304C5E57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F6248031-E790-4A25-A2BD-05370A9AE140}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6248031-E790-4A25-A2BD-05370A9AE140}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6248031-E790-4A25-A2BD-05370A9AE140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581959BB-F11D-48B4-9842-5727304C5E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581959BB-F11D-48B4-9842-5727304C5E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581959BB-F11D-48B4-9842-5727304C5E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581959BB-F11D-48B4-9842-5727304C5E57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

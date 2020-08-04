@@ -21,7 +21,6 @@ namespace NewsPortal
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             UnityConfig.RegisterComponents();
-            //UnitOfWorkHelper.SetUnitOfWork(new UnitOfWork(HibernateHelper.OpenSession()));
         }
     }
 }

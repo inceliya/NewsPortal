@@ -1235,3 +1235,5 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal\obj\Debug\NewsPortal.Web.csproj.CopyComplete
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal\obj\Debug\NewsPortal.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.DAL.Xml.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.DAL.Xml.pdb

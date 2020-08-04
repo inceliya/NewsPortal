@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NewsItem>
+  <item>
+    <id>0</id>
+    <title>Вирвали майже 1400 рослин маку, зібрали коноплю в парнику</title>
+    <description>&lt;p&gt;Вырвали траву&lt;/p&gt;
+</description>
+    <image>/Pictures/737934dc-a157-45ed-9a2e-b7f996bfc0a2_79451-56.jpg</image>
+    <publication_date>2020-08-03T20:27:00Z</publication_date>
+    <visibility>true</visibility>
+  </item>
+  <item>
+    <id>1</id>
+    <title>У меня в комнате сегодня всё хорошо было</title>
+    <description>&lt;p&gt;Комната просто лучшая я так считаю&lt;/p&gt;
+</description>
+    <image>/Pictures/5221332e-4048-4b7e-8dd6-d2831d3560d71499377965_portal.jpg</image>
+    <publication_date>2020-08-03T20:28:00Z</publication_date>
+    <visibility>true</visibility>
+  </item>
+</NewsItem>

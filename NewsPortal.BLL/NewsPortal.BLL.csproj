@@ -60,7 +60,6 @@
     <Compile Include="Services\CommentService.cs" />
     <Compile Include="Services\NewsService.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
-    <Compile Include="UnitOfWork\UnitOfWorkHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
