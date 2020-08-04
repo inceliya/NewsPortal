@@ -137,3 +137,9 @@ textarea {
 .nonhide {
     display: initial;
 }
+
+.paging {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

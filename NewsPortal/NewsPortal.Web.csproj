@@ -746,7 +746,6 @@
     <Content Include="Views\Shared\_NewsPreview.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Admin\Details.cshtml" />
-    <Content Include="Views\Shared\IndexUrl.cshtml" />
     <Content Include="Scripts\tinymce\skins\ui\oxide\fonts\tinymce-mobile.woff" />
     <Content Include="Scripts\tinymce\skins\ui\oxide-dark\fonts\tinymce-mobile.woff" />
     <Content Include="Scripts\tinymce\langs\readme.md" />
@@ -756,7 +755,6 @@
   <ItemGroup>
     <Folder Include="Exception\" />
     <Folder Include="Pictures\" />
-    <Folder Include="Views\Error\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

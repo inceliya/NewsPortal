@@ -37,3 +37,12 @@ C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.c
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CopyComplete
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.dll.config
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\bin\Debug\AutoMapper.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\bin\Debug\AutoMapper.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.pdb

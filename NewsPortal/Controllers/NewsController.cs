@@ -39,12 +39,6 @@ namespace NewsPortal.Controllers
         [HttpGet]
         public ActionResult Index(int? page = 1, string filter = "all", string sort = "date", string search = "", bool reverse = true)
         {
-            //var cfg = new Configuration();
-            //cfg.Configure();
-            //cfg.AddAssembly(typeof(NewsItem).Assembly);
-            //cfg.AddAssembly(typeof(Comment).Assembly);
-            //new SchemaExport(cfg).Execute(true, true, false);
-
             int pageSize = Convert.ToInt32(ConfigurationManager.AppSettings["PageSizing"]); 
 
             var news = NewsService.GetAll(filter, sort, search, reverse);
@@ -61,10 +55,6 @@ namespace NewsPortal.Controllers
             PageInfo pageInfo = new PageInfo { PageNumber = (int)page, PageSize = pageSize, TotalItems = newsViewModel.Count };
             IndexViewModel ivm = new IndexViewModel { PageInfo = pageInfo, NewsViewModels = NewsPerPages };
             return View(ivm);
-
-            //return View(newsViewModel.ToPagedList(pageNumber, pageSize));
-
-
         }
 
         [HttpGet]
