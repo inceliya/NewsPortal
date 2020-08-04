@@ -1237,3 +1237,12 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\Reep\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.DAL.Xml.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.DAL.Xml.pdb
+D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.DAL.Xml.dll
+D:\апап\NewsPortal\NewsPortal\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\апап\NewsPortal\NewsPortal\bin\Unity.Abstractions.dll
+D:\апап\NewsPortal\NewsPortal\bin\Unity.Container.dll
+D:\апап\NewsPortal\NewsPortal\bin\Unity.Mvc5.dll
+D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.DAL.Xml.pdb
+D:\апап\NewsPortal\NewsPortal\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\апап\NewsPortal\NewsPortal\bin\Unity.Abstractions.pdb
+D:\апап\NewsPortal\NewsPortal\bin\Unity.Container.pdb

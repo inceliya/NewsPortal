@@ -22,7 +22,8 @@ namespace NewsPortal
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
             bundles.Add(new ScriptBundle("~/bundles/custom").Include(
-                      "~/Scripts/SearchFiltersSortScripts.js"));
+                      "~/Scripts/SearchFiltersSortScripts.js",
+                      "~/Scripts/dateTimezone.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

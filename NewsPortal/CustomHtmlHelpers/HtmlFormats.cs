@@ -72,15 +72,15 @@ namespace NewsPortal.CustomHtmlHelpers
     {
         public static IHtmlString Date(this HtmlHelper helper, DateTime date)
         {
-            string result = "";
-            if (date.Date == DateTime.Today)
-                result += Resources.Resource.Today;
-            else if (date.Date == DateTime.Today.AddDays(-1))
-                result += Resources.Resource.Yesterday;
-            else
-                result += $"{date.Day.ToString("00")}.{date.Month.ToString("00")}.{date.Year.ToString("0000")}";
+            string res = "<div class=\"dateUtc\">{";
+            res += $"\"year\":{date.Year},";
+            res += $"\"month\":{date.Month},";
+            res += $"\"day\":{date.Day},";
+            res += $"\"hour\":{date.Hour},";
+            res += $"\"minute\":{date.Minute}";
+            res += "}</div>";
 
-            return new MvcHtmlString($"{result} {date.Hour.ToString("00")}:{date.Minute.ToString("00")}");
+            return new MvcHtmlString(res);
         }
         public static IHtmlString IndexUrl(this HtmlHelper helper, HttpRequestBase request, string key, string param, bool? reverse = null)
         {

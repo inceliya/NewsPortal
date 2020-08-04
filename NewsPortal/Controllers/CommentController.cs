@@ -25,7 +25,7 @@ namespace NewsPortal.Controllers
 
         [HttpGet]
         [ExceptionLogger]
-        public ActionResult GetComments(int id, int timeZone)
+        public ActionResult GetComments(int id)
         {
             var newsItem = NewsService.Get(id);
             var newsItemVewModel = new NewsViewModel(newsItem, CommentService.GetByNewsId(newsItem.Id));
@@ -34,8 +34,6 @@ namespace NewsPortal.Controllers
             {
                 return HttpNotFound();
             }
-            foreach (var item in newsItemVewModel.Comments)
-                item.CreationDate = item.CreationDate.AddHours(timeZone);
             return PartialView("_CommentsListPartial", newsItemVewModel.Comments.Reverse());
         }
 
