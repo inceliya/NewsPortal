@@ -20,7 +20,8 @@ namespace NewsPortal
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            UnitOfWorkHelper.SetUnitOfWork(new UnitOfWork(HibernateHelper.OpenSession()));
+            UnityConfig.RegisterComponents();
+            //UnitOfWorkHelper.SetUnitOfWork(new UnitOfWork(HibernateHelper.OpenSession()));
         }
     }
 }

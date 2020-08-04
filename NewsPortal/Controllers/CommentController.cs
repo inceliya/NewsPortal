@@ -1,4 +1,5 @@
 ﻿using NewsPortal.BLL.Entities;
+using NewsPortal.BLL.IServices;
 using NewsPortal.BLL.Services;
 using NewsPortal.ExceptionLogger;
 using NewsPortal.ViewModels;
@@ -13,13 +14,13 @@ namespace NewsPortal.Controllers
 {
     public class CommentController : Controller
     {
-        private NewsService NewsService { get; }
-        private CommentService CommentService { get; }
+        private INewsService NewsService { get; }
+        private ICommentService CommentService { get; }
 
-        public CommentController()
+        public CommentController(INewsService ns, ICommentService cs)
         {
-            NewsService = new NewsService();
-            CommentService = new CommentService();
+            NewsService = ns;
+            CommentService = cs;
         }
 
         [HttpGet]

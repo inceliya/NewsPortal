@@ -11,6 +11,7 @@ using System.IO;
 using NewsPortal.BLL.Services;
 using NewsPortal.BLL.Entities;
 using System.Configuration;
+using NewsPortal.BLL.IServices;
 
 namespace NewsPortal.Controllers
 {
@@ -19,13 +20,13 @@ namespace NewsPortal.Controllers
     [Culture]
     public class AdminController : Controller
     {
-        private NewsService NewsService { get; set; }
-        private CommentService CommentService { get; set; }
+        private INewsService NewsService { get; set; }
+        private ICommentService CommentService { get; set; }
 
-        public AdminController()
+        public AdminController(INewsService ns, ICommentService cs)
         {
-            NewsService = new NewsService();
-            CommentService = new CommentService();
+            NewsService = ns;
+            CommentService = cs;
         }
 
         [HttpGet]

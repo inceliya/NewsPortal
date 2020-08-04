@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NewsPortal.BLL.Entities
 {
-    public class Login
+    public class Login : Entity
     {
         public string UserName { get; set; }
 

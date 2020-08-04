@@ -27,3 +27,13 @@ D:\апап\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CoreCompil
 D:\апап\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CopyComplete
 D:\апап\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.dll
 D:\апап\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.dll.config
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\bin\Debug\AutoMapper.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\bin\Debug\AutoMapper.xml
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csprojAssemblyReference.cache
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CoreCompileInputs.cache
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CopyComplete
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.pdb

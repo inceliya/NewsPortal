@@ -17,25 +17,25 @@ namespace NewsPortal.DAL.UnitOfWork
 
         public ISession Session { get; }
 
-        public UnitOfWork(ISession session)
+        public UnitOfWork(/*ISession session,*/ INewsRepository newsRepository, ICommentRepository commentRepository)
         {
-            Session = session;
+            //Session = session;
 
-            News = new NewsRepository();
-            Comment = new CommentRepository();
+            News = newsRepository;
+            Comment = commentRepository;
         }
 
         public void Commit()
         {
-            using (ITransaction transaction = Session.BeginTransaction())
-            {
-                transaction.Commit();
-            }
+            //using (ITransaction transaction = Session.BeginTransaction())
+            //{
+            //    transaction.Commit();
+            //}
         }
 
         public void Dispose()
         {
-            Session.Close();
+            //Session.Close();
         }
     }
 }

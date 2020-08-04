@@ -34,7 +34,7 @@ namespace NewsPortal.ViewModels
         [DisplayFormat(DataFormatString = "{0:dd'/'MM'/'yyyy}")]
         public DateTime PublicationDate { get; set; }
 
-        public bool Visibility { get; set; }
+        public bool Visibility { get; set; } = true;
 
         private ICollection<CommentViewModel> _comments;
 

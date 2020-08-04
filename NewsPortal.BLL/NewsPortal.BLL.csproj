@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Login.cs" />
     <Compile Include="Entities\NewsItem.cs" />
     <Compile Include="Entities\PageInfo.cs" />
@@ -52,6 +53,9 @@
     <Compile Include="IRepositories\ICommentRepository.cs" />
     <Compile Include="IRepositories\INewsRepository.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="IServices\ICommentService.cs" />
+    <Compile Include="IServices\INewsService.cs" />
+    <Compile Include="IServices\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CommentService.cs" />
     <Compile Include="Services\NewsService.cs" />

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NewsPortal.DAL.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : Entity
     {
         public T Get(int id)
         {

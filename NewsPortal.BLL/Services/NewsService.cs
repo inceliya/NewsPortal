@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using NewsPortal.BLL.Entities;
+using NewsPortal.BLL.IServices;
 using NewsPortal.BLL.UnitOfWork;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,18 @@ using System.Threading.Tasks;
 
 namespace NewsPortal.BLL.Services
 {
-    public class NewsService
+    public class NewsService : INewsService
     {
+        private IUnitOfWork UnitOfWork;
+
+        public NewsService(IUnitOfWork uow)
+        {
+            UnitOfWork = uow;
+        }
+
         public NewsItem Get(int id)
         {
-            var newsItem = UnitOfWorkHelper.UnitOfWork.News.Get(id);
+            var newsItem = UnitOfWork.News.Get(id);
             return newsItem;
         }
 
@@ -22,7 +30,7 @@ namespace NewsPortal.BLL.Services
         {
             //var mapper = new MapperConfiguration(cfg => cfg.CreateMap<NewsItem, NewsItem>()).CreateMapper();
             //return mapper.Map<IEnumerable<NewsItem>, IEnumerable<NewsItem>>(UnitOfWork.News.GetAll());
-            var news = UnitOfWorkHelper.UnitOfWork.News.GetAllByFilter(Filter(filter)).ToList();
+            var news = UnitOfWork.News.GetAllByFilter(Filter(filter)).ToList();
 
             Sort(sort, ref news);
             Search(search, ref news);
@@ -78,17 +86,17 @@ namespace NewsPortal.BLL.Services
 
         public void Add(NewsItem newsItem)
         {
-            UnitOfWorkHelper.UnitOfWork.News.Add(newsItem);
+            UnitOfWork.News.Add(newsItem);
         }
 
         public void Update(NewsItem newsItem)
         {
-            UnitOfWorkHelper.UnitOfWork.News.Update(newsItem);
+            UnitOfWork.News.Update(newsItem);
         }
 
         public void Delete(int id)
         {
-            UnitOfWorkHelper.UnitOfWork.News.Delete(id);
+            UnitOfWork.News.Delete(id);
         }
     }
 }

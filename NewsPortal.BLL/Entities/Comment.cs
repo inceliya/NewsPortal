@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NewsPortal.BLL.Entities
 {
-    public class Comment
+    public class Comment : Entity
     {
         public int Id { get; set; }
 
