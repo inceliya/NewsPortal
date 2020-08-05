@@ -1,4 +1,4 @@
-﻿window.onload = function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
     let url = loader.dataset.request.substring(0, loader.dataset.request.length - 1);
     if (loader.dataset.view.toString().toLowerCase() == "index") {
         let sort = loader.dataset.sort;
@@ -46,4 +46,4 @@
     })
 
 
-}
+})

@@ -39,7 +39,7 @@ namespace NewsPortal.Controllers
 
         [HttpPost]
         [ExceptionLogger]
-        public ActionResult AddComment(string author, string text, int id, int timeZone, string controllerName)
+        public ActionResult AddComment(string author, string text, int id, string controllerName)
         {
             //var repository = new NewsRepository();
             //var news = repository.GetNewsById(id);
@@ -57,8 +57,6 @@ namespace NewsPortal.Controllers
             Regex r = new Regex(@"<[^>]*>");
             if (!string.IsNullOrEmpty(r.Match(comment.Author).Value) || !string.IsNullOrEmpty(r.Match(comment.Text).Value))
                 return View("Error");
-
-            comment.CreationDate = comment.CreationDate.AddHours(timeZone);
 
             CommentService.Add(comment);
 

@@ -38,7 +38,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @id="editorHtml" })
+            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @id = "editorHtml" })
             @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -47,15 +47,21 @@
         @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="editor-field col-md-10">
             <p>New file: <input type="file" name="newsImg" accept=".png, .jpg, .jpeg" /></p>
-            
+
         </div>
     </div>
 
     <div class="form-group">
         @Html.LabelFor(model => model.PublicationDate, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            <input type="datetime-local" value=@publicationDate class = "form-control" placeholder="dd/mm/yyyy hh:mm" name="PublicationDate" />
+            <input type="datetime-local" value=@publicationDate class="form-control" placeholder="dd/mm/yyyy hh:mm" name="PublicationDate" />
             @Html.ValidationMessageFor(model => model.PublicationDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TimeZone, new { htmlAttributes = new { @class = "form-control", @id = "timezone", @type = "hidden" } })
         </div>
     </div>
 
@@ -68,7 +74,7 @@
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="@Resources.Resource.Save" class="btn btn-success" />
+            <input type="submit" value="@Resources.Resource.Save" class="btn btn-success" id="submitButton" />
             @Html.ActionLink(Resources.Resource.Cancel, "Index", ViewContext.RouteData.Values["controller"], new { @class = "btn btn-danger" })
         </div>
     </div>
@@ -78,6 +84,58 @@
 <script>
     document.addEventListener("DOMContentLoaded", function (event) {
         var editor = CKEDITOR.replace('editorHtml');
+    });
+       let submit = document.querySelector("#submitButton");
+    submit.addEventListener('click', function () {
+        console.log(11);
+        if (timezone) {
+            $(timezone).val(new Date().getTimezoneOffset() / 60);
+        }
+        else {
+            alert("Error! The struct of form was corrupted!");
+            event.preventDefault();
+        }
+        let error = false;
+        let desError = document.querySelector("#desError");
+        if (CKEDITOR.instances.editorCK.getData().length < 1) {
+            desError.classList.remove("field-validation-valid");
+            desError.classList.add("field-validation-error");
+            desError.innerHTML = "Description is required";
+            error = true;
+        }
+        else {
+            desError.classList.remove("field-validation-error");
+            desError.classList.add("field-validation-valid");
+            desError.innerHTML = "";
+        }
+        /*let titleError = document.querySelector("#titleError");
+        if (titleError.innerHTML.length < 1) {
+            titleError.classList.remove("field-validation-valid");
+            titleError.classList.add("field-validation-error");
+            titleError.innerHTML = "Title is required";
+            error = true;
+        }
+        else {
+            titleError.classList.remove("field-validation-error");
+            titleError.classList.add("field-validation-valid");
+            titleError.innerHTML = "";
+        }
+        let dateError = document.querySelector("#dateError");
+        if (dateError.innerHTML.length < 1) {
+            dateError.classList.remove("field-validation-valid");
+            dateError.classList.add("field-validation-error");
+            dateError.innerHTML = "Date is required";
+            error = true;
+        }
+        else {
+            dateError.classList.remove("field-validation-error");
+            dateError.classList.add("field-validation-valid");
+            dateError.innerHTML = "";
+        }*/
+        
+        if (error) {
+            event.preventDefault();
+        }
     });
 </script>
 

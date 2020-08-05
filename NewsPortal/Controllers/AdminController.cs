@@ -59,7 +59,7 @@ namespace NewsPortal.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ExceptionLogger]
-        public ActionResult Create(NewsViewModel newsItemViewModel, HttpPostedFileBase newsImg, HttpPostedFileBase test)
+        public ActionResult Create(NewsViewModel newsItemViewModel, HttpPostedFileBase newsImg)
         {
             if (newsImg != null)
             {
@@ -79,7 +79,7 @@ namespace NewsPortal.Controllers
                     Title = newsItemViewModel.Title,
                     Description = newsItemViewModel.Description,
                     Image = newsItemViewModel.Image,
-                    PublicationDate = newsItemViewModel.PublicationDate,
+                    PublicationDate = newsItemViewModel.PublicationDate.AddHours(newsItemViewModel.TimeZone),
                     Visibility = newsItemViewModel.Visibility
                 };
 
@@ -135,7 +135,7 @@ namespace NewsPortal.Controllers
                     Title = newsItemViewModel.Title,
                     Description = newsItemViewModel.Description,
                     Image = newsItemViewModel.Image,
-                    PublicationDate = newsItemViewModel.PublicationDate,
+                    PublicationDate = newsItemViewModel.PublicationDate.AddHours(newsItemViewModel.TimeZone),
                     Visibility = newsItemViewModel.Visibility
                 };
                 NewsService.Update(newsItem);

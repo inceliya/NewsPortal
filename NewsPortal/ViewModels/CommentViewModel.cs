@@ -25,7 +25,7 @@ namespace NewsPortal.ViewModels
         [Display(Name = "Creation Date")]
         [DisplayFormat(DataFormatString = "{0:dd'/'MM'/'yyyy}")]
         public DateTime CreationDate { get; set; }
-
+        public int TimeZone { get; set; }
         public CommentViewModel() { }
 
         public CommentViewModel(Comment comment)
