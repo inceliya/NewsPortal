@@ -36,6 +36,8 @@ namespace NewsPortal.ViewModels
 
         public bool Visibility { get; set; } = true;
 
+        public int TimeZone { get; set; } 
+
         private ICollection<CommentViewModel> _comments;
 
         public ICollection<CommentViewModel> Comments

@@ -72,10 +72,18 @@ namespace NewsPortal.BLL.Services
             Func<NewsItem, object> sortParam = n => n.PublicationDate;
             switch (sort)
             {
-                case "title": sortParam = n => n.Title; break;
-                case "description": sortParam = n => n.Description; break;
+                case "date":
+                default:
+                    sortParam = n => n.PublicationDate;
+                    break;
+                case "title":
+                    sortParam = n => n.Title.ToLower();
+                    break;
+                case "description":
+                    sortParam = n => n.Description.ToLower();
+                    break;
             }
-            news.OrderBy(n => n.Title);
+            news.OrderBy(sortParam);
         }
 
         private void Search(string search, ref List<NewsItem> news)

@@ -42,6 +42,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/custom")
+    @Scripts.Render("~/bundles/date")
     @RenderSection("scripts", required: false)
     <div id="loader" data-sort="@Request.Params["sort"]" data-reverse="@Request.Params["reverse"]" data-view="@ViewContext.RouteData.GetRequiredString("action")" data-index="@Url.Action("Index","News")" data-request="@Html.IndexUrl(Request, "search", ".")"></div>
     <div id="lang" data-new-first="@Resources.Resource.NewFirst" data-old-first="@Resources.Resource.OldFirst" data-title-a-z="@Resources.Resource.TitleAZ" data-title-z-a="@Resources.Resource.TitleZA" data-desc-a-z="@Resources.Resource.DescriptionAZ" data-desc-z-a="@Resources.Resource.DescriptionZA"></div>

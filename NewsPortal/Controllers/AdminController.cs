@@ -59,7 +59,7 @@ namespace NewsPortal.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ExceptionLogger]
-        public ActionResult Create(NewsViewModel newsItemViewModel, HttpPostedFileBase newsImg)
+        public ActionResult Create(NewsViewModel newsItemViewModel, HttpPostedFileBase newsImg, HttpPostedFileBase test)
         {
             if (newsImg != null)
             {
@@ -73,8 +73,6 @@ namespace NewsPortal.Controllers
 
             if (ModelState.IsValid)
             {
-                newsItemViewModel.PublicationDate = newsItemViewModel.PublicationDate.ToUniversalTime();
-
                 var newsItem = new NewsItem()
                 {
                     Id = newsItemViewModel.Id,
