@@ -10,7 +10,7 @@ namespace NewsPortal
 {
     public static class UnityConfig
     {
-        private static readonly string Connection = "db";
+        private static readonly string Connection = "xml";
 
         public static void RegisterComponents()
         {

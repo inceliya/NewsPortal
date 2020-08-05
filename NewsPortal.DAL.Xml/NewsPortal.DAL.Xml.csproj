@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,16 +48,11 @@
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
     <Compile Include="XML\XmlHelper.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\NewsPortal.BLL\NewsPortal.BLL.csproj">
       <Project>{f6248031-e790-4a25-a2bd-05370a9ae140}</Project>
       <Name>NewsPortal.BLL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data\CommentData.xml" />
-    <Content Include="Data\NewsData.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

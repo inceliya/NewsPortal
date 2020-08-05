@@ -6,19 +6,23 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Xml.Linq;
 
 namespace NewsPortal.DAL.Xml.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
+        private string FilePath = HttpContext.Current.Server.MapPath("~/App_Data/XmlData/CommentData.xml");
+
         protected List<Comment> Comments;
         protected XDocument ItemsData;
 
         public CommentRepository()
         {
             Comments = new List<Comment>();
-            ItemsData = XDocument.Load(Path.GetFullPath(@"C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\Data\CommentData.xml"));
+            ItemsData = XDocument.Load(FilePath);
+
             if (!string.IsNullOrEmpty(ItemsData.Root.Value))
             {
                 var comments = from t in ItemsData.Descendants("item")
@@ -67,42 +71,25 @@ namespace NewsPortal.DAL.Xml.Repositories
                 new XElement("text", comment.Text),
                 new XElement("creation_date", comment.CreationDate)));
 
-            ItemsData.Save(Path.GetFullPath(@"C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\Data\CommentData.xml"));
+            ItemsData.Save(FilePath);
         }
 
         public void Update(Comment comment)
         {
-            try
-            {
-                XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == comment.Id).FirstOrDefault();
+            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == comment.Id).FirstOrDefault();
 
-                node.SetElementValue("news_id", comment.NewsId);
-                node.SetElementValue("author", comment.Author);
-                node.SetElementValue("text", comment.Text);
-                node.SetElementValue("creation_date", comment.CreationDate);
-                ItemsData.Save(Path.GetFullPath(@"C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\Data\CommentData.xml"));
-            }
-            catch (Exception)
-            {
-
-                throw new NotImplementedException();
-            }
+            node.SetElementValue("news_id", comment.NewsId);
+            node.SetElementValue("author", comment.Author);
+            node.SetElementValue("text", comment.Text);
+            node.SetElementValue("creation_date", comment.CreationDate);
+            ItemsData.Save(FilePath);
         }
 
         public void Delete(int id)
         {
-            try
-            {
-                ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == id).Remove();
+            ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == id).Remove();
 
-                ItemsData.Save(Path.GetFullPath(@"C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\Data\CommentData.xml"));
-
-            }
-            catch (Exception)
-            {
-
-                throw new NotImplementedException();
-            }
+            ItemsData.Save(FilePath);
         }
     }
 }

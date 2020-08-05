@@ -183,6 +183,8 @@
     <EmbeddedResource Include="HibernateMapping\NewsItem.hbm.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Content Include="App_Data\XmlData\CommentData.xml" />
+    <Content Include="App_Data\XmlData\NewsData.xml" />
     <Content Include="Resources\Icons\iconfinder_Flag_of_Russia_96241.png" />
     <Content Include="Resources\Icons\iconfinder_Flag_of_Ukraine_96351.png" />
     <Content Include="Resources\Icons\iconfinder_Flag_of_United_States_96220.png" />

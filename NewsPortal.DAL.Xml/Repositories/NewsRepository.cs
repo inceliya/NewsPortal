@@ -7,19 +7,21 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Xml.Linq;
 
 namespace NewsPortal.DAL.Xml.Repositories
 {
     public class NewsRepository : INewsRepository
     {
+        private string FilePath = HttpContext.Current.Server.MapPath("~/App_Data/XmlData/NewsData.xml");
         protected List<NewsItem> News;
         protected XDocument ItemsData;
 
         public NewsRepository()
         {
             News = new List<NewsItem>();
-            ItemsData = XDocument.Load(Path.GetFullPath(@"C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\Data\NewsData.xml"));
+            ItemsData = XDocument.Load(FilePath);
             if (!string.IsNullOrEmpty(ItemsData.Root.Value))
             {
                 var news = from t in ItemsData.Descendants("item")
@@ -70,43 +72,26 @@ namespace NewsPortal.DAL.Xml.Repositories
                 new XElement("publication_date", newsItem.PublicationDate),
                 new XElement("visibility", newsItem.Visibility)));
 
-            ItemsData.Save(Path.GetFullPath(@"C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\Data\NewsData.xml"));
+            ItemsData.Save(FilePath);
         }
 
         public void Update(NewsItem newsItem)
         {
-            try
-            {
-                XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == newsItem.Id).FirstOrDefault();
+            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == newsItem.Id).FirstOrDefault();
 
-                node.SetElementValue("title", newsItem.Title);
-                node.SetElementValue("description", newsItem.Description);
-                node.SetElementValue("image", newsItem.Image);
-                node.SetElementValue("publication_date", newsItem.PublicationDate);
-                node.SetElementValue("visibility", newsItem.Visibility);
-                ItemsData.Save(Path.GetFullPath(@"C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\Data\NewsData.xml"));
-            }
-            catch (Exception)
-            {
-
-                throw new NotImplementedException();
-            }
+            node.SetElementValue("title", newsItem.Title);
+            node.SetElementValue("description", newsItem.Description);
+            node.SetElementValue("image", newsItem.Image);
+            node.SetElementValue("publication_date", newsItem.PublicationDate);
+            node.SetElementValue("visibility", newsItem.Visibility);
+            ItemsData.Save(FilePath);
         }
 
         public void Delete(int id)
         {
-            try
-            {
-                ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == id).Remove();
+            ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == id).Remove();
 
-                ItemsData.Save(Path.GetFullPath(@"C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\Data\NewsData.xml"));
-
-            }
-            catch (Exception)
-            {
-
-                throw new NotImplementedException();
-            }
+            ItemsData.Save(FilePath);
         }
     }
 }
