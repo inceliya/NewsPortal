@@ -32,7 +32,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", } })
+                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", @id="titleEditor" } })
                 @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger", @id = "titleError" })
             </div>
         </div>
@@ -56,7 +56,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.PublicationDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.PublicationDate, new { htmlAttributes = new { @class = "form-control", @type = "datetime-local" } })
+                @Html.EditorFor(model => model.PublicationDate, new { htmlAttributes = new { @class = "form-control", @type = "datetime-local",  @id="dateEditor" } })
                 @Html.ValidationMessageFor(model => model.PublicationDate, "", new { @class = "text-danger", @id = "dateError" })
             </div>
         </div>
@@ -106,8 +106,9 @@
             desError.classList.add("field-validation-valid");
             desError.innerHTML = "";
         }
-        /*let titleError = document.querySelector("#titleError");
-        if (titleError.innerHTML.length < 1) {
+        let titleError = document.querySelector("#titleError");
+        let titleEditor = document.querySelector("#titleEditor");
+        if (titleEditor.innerHTML.length < 1) {
             titleError.classList.remove("field-validation-valid");
             titleError.classList.add("field-validation-error");
             titleError.innerHTML = "Title is required";
@@ -118,8 +119,8 @@
             titleError.classList.add("field-validation-valid");
             titleError.innerHTML = "";
         }
-        let dateError = document.querySelector("#dateError");
-        if (dateError.innerHTML.length < 1) {
+        let dateEditor = document.querySelector("#dateEditor");
+        if (dateEditor.innerHTML.length < 1) {
             dateError.classList.remove("field-validation-valid");
             dateError.classList.add("field-validation-error");
             dateError.innerHTML = "Date is required";
@@ -129,7 +130,7 @@
             dateError.classList.remove("field-validation-error");
             dateError.classList.add("field-validation-valid");
             dateError.innerHTML = "";
-        }*/
+        }
         if (timezone) {
             $(timezone).val(new Date().getTimezoneOffset() / 60);
         }
