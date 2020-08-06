@@ -37,22 +37,22 @@ namespace NewsPortal.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index(int? page = 1, string filter = "all", string sort = "date", string search = "", bool reverse = true)
+        public ActionResult Index(PanelViewModel panel)
         {
             int pageSize = Convert.ToInt32(ConfigurationManager.AppSettings["PageSizing"]); 
 
-            var news = NewsService.GetAll(filter, sort, search, reverse);
+            var news = NewsService.GetAll(panel.Filter, panel.Sort, panel.Search, panel.Reverse);
+            news =news.Where(n => n.Visibility).ToList();
             var newsViewModel = new List<NewsViewModel>();
-
+            
             foreach (var newsItem in news)
             {
                 var newsItemViewModel = new NewsViewModel(newsItem, CommentService.GetByNewsId(newsItem.Id));
-                if (newsItemViewModel.Visibility)
-                    newsViewModel.Add(newsItemViewModel);
+                newsViewModel.Add(newsItemViewModel);
             }
 
-            IEnumerable<NewsViewModel> NewsPerPages = newsViewModel.Skip(((int)page - 1) * pageSize).Take(pageSize);
-            PageInfo pageInfo = new PageInfo { PageNumber = (int)page, PageSize = pageSize, TotalItems = newsViewModel.Count };
+            IEnumerable<NewsViewModel> NewsPerPages = newsViewModel.Skip((panel.Page * pageSize)).Take(pageSize);
+            PageInfo pageInfo = new PageInfo { PageNumber = panel.Page+1, PageSize = pageSize, TotalItems = newsViewModel.Count };
             IndexViewModel ivm = new IndexViewModel { PageInfo = pageInfo, NewsViewModels = NewsPerPages };
             return View(ivm);
         }

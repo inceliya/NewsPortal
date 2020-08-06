@@ -174,9 +174,11 @@
       <DependentUpon>Resource.ru.resx</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\CommentViewModel.cs" />
+    <Compile Include="ViewModels\PanelModelBinder.cs" />
     <Compile Include="ViewModels\IndexViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\NewsViewModel.cs" />
+    <Compile Include="ViewModels\PanelViewModel.cs" />
     <EmbeddedResource Include="HibernateMapping\Comment.hbm.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
