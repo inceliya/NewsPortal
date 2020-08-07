@@ -1093,7 +1093,6 @@ C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\Unity.Container.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\Unity.Mvc5.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\WebGrease.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.BLL.pdb
-C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.BLL.dll.config
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.DAL.pdb
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\Iesi.Collections.xml
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NHibernate.xml

@@ -1,7 +1,8 @@
 ﻿using NewsPortal.BLL.Entities;
-using NewsPortal.BLL.IRepositories;
+using NewsPortal.BLL.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,8 @@ namespace NewsPortal.DAL.Xml.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
-        private string FilePath = HttpContext.Current.Server.MapPath("~/App_Data/XmlData/CommentData.xml");
+        //private string FilePath = HttpContext.Current.Server.MapPath("~/App_Data/XmlData/CommentData.xml");
+        private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["CommentXmlFilePath"]);
 
         protected List<Comment> Comments;
         protected XDocument ItemsData;
@@ -30,8 +32,8 @@ namespace NewsPortal.DAL.Xml.Repositories
                                {
                                    Id = (int)t.Element("id"),
                                    NewsId = (int)t.Element("news_id"),
-                                   Author = t.Element("author").Value,
-                                   Text = t.Element("text").Value,
+                                   Author = (string)t.Element("author"),
+                                   Text = (string)t.Element("text"),
                                    CreationDate = (DateTime)t.Element("creation_date")
                                };
 
@@ -58,7 +60,7 @@ namespace NewsPortal.DAL.Xml.Repositories
         {
             if (!string.IsNullOrEmpty(ItemsData.Root.Value))
             {
-                comment.Id = (int)(from S in ItemsData.Descendants("item") orderby (int)S.Element("id") descending select (int)S.Element("id")).FirstOrDefault() + 1;
+                comment.Id = (int)(from s in ItemsData.Descendants("item") orderby (int)s.Element("id") descending select (int)s.Element("id")).FirstOrDefault() + 1;
             }
             else
             {
@@ -76,7 +78,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Update(Comment comment)
         {
-            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == comment.Id).FirstOrDefault();
+            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == comment.Id).Single();
 
             node.SetElementValue("news_id", comment.NewsId);
             node.SetElementValue("author", comment.Author);

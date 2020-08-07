@@ -1,4 +1,4 @@
-using NewsPortal.BLL.IRepositories;
+using NewsPortal.BLL.Repositories;
 using NewsPortal.BLL.IServices;
 using NewsPortal.BLL.Services;
 using NewsPortal.BLL.UnitOfWork;
@@ -10,7 +10,7 @@ namespace NewsPortal
 {
     public static class UnityConfig
     {
-        private static readonly string Connection = "db";
+        private static readonly string Connection = "xml";
 
         public static void RegisterComponents()
         {
@@ -30,8 +30,6 @@ namespace NewsPortal
                     container.RegisterType<IUnitOfWork, DAL.UnitOfWork.UnitOfWork>();
                     break;
             }
-            container.RegisterType<INewsService, NewsService>();
-            container.RegisterType<ICommentService, CommentService>();
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

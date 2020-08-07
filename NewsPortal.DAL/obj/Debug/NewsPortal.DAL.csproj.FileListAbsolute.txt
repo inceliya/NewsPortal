@@ -186,7 +186,6 @@ C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.pdb
-C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.dll.config
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.xml
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.xml
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.xml

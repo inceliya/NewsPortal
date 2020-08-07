@@ -1,7 +1,8 @@
 ﻿using NewsPortal.BLL.Entities;
-using NewsPortal.BLL.IRepositories;
+using NewsPortal.BLL.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
@@ -14,7 +15,8 @@ namespace NewsPortal.DAL.Xml.Repositories
 {
     public class NewsRepository : INewsRepository
     {
-        private string FilePath = HttpContext.Current.Server.MapPath("~/App_Data/XmlData/NewsData.xml");
+        //private string FilePath = HttpContext.Current.Server.MapPath("~/App_Data/XmlData/NewsData.xml");
+        private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["NewsXmlFilePath"]);
         protected List<NewsItem> News;
         protected XDocument ItemsData;
 
@@ -28,9 +30,9 @@ namespace NewsPortal.DAL.Xml.Repositories
                            select new NewsItem()
                            {
                                Id = (int)t.Element("id"),
-                               Title = t.Element("title").Value,
-                               Description = t.Element("description").Value,
-                               Image = t.Element("image").Value,
+                               Title = (string)t.Element("title"),
+                               Description = (string)t.Element("description"),
+                               Image = (string)t.Element("image"),
                                PublicationDate = (DateTime)t.Element("publication_date"),
                                Visibility = (bool)t.Element("visibility")
                            };
@@ -57,7 +59,7 @@ namespace NewsPortal.DAL.Xml.Repositories
         {
             if (!string.IsNullOrEmpty(ItemsData.Root.Value))
             {
-                newsItem.Id = (int)(from S in ItemsData.Descendants("item") orderby (int)S.Element("id") descending select (int)S.Element("id")).FirstOrDefault() + 1;
+                newsItem.Id = (int)(from s in ItemsData.Descendants("item") orderby (int)s.Element("id") descending select (int)s.Element("id")).FirstOrDefault() + 1;
             }
             else
             {
@@ -77,7 +79,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Update(NewsItem newsItem)
         {
-            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == newsItem.Id).FirstOrDefault();
+            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == newsItem.Id).Single();
 
             node.SetElementValue("title", newsItem.Title);
             node.SetElementValue("description", newsItem.Description);

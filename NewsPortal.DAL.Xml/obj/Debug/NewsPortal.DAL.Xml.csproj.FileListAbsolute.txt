@@ -2,7 +2,6 @@ C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.D
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.DAL.Xml.pdb
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.BLL.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.BLL.pdb
-C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.BLL.dll.config
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.csprojAssemblyReference.cache
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.csproj.CoreCompileInputs.cache
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.csproj.CopyComplete

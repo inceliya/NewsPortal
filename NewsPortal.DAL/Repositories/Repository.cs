@@ -1,5 +1,5 @@
 ﻿using NewsPortal.BLL.Entities;
-using NewsPortal.BLL.IRepositories;
+using NewsPortal.BLL.Repositories;
 using NHibernate;
 using System;
 using System.Collections.Generic;
@@ -25,7 +25,7 @@ namespace NewsPortal.DAL.Repositories
             using (ISession session = Hibernate.HibernateHelper.OpenSession())
             {
                 var queryResult = session.QueryOver<T>();
-                return queryResult.List().AsEnumerable();
+                return queryResult.List();
             }
         }
 

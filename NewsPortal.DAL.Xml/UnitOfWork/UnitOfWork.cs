@@ -1,4 +1,4 @@
-﻿using NewsPortal.BLL.IRepositories;
+﻿using NewsPortal.BLL.Repositories;
 using NewsPortal.BLL.UnitOfWork;
 using System;
 using System.Collections.Generic;

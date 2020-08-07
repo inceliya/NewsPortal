@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewsPortal.BLL.IRepositories
+namespace NewsPortal.BLL.Repositories
 {
     public interface ICommentRepository : IRepository<Comment>
     {

@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace NewsPortal.BLL.Services
 {
-    public class NewsService : INewsService
+    public class NewsService
     {
-        private IUnitOfWork UnitOfWork;
+        private IUnitOfWork UnitOfWork { get; }
 
         public NewsService(IUnitOfWork uow)
         {
@@ -28,8 +28,6 @@ namespace NewsPortal.BLL.Services
 
         public List<NewsItem> GetAll(string filter = "all", string sort = "date", string search = "", bool reverse = false)
         {
-            //var mapper = new MapperConfiguration(cfg => cfg.CreateMap<NewsItem, NewsItem>()).CreateMapper();
-            //return mapper.Map<IEnumerable<NewsItem>, IEnumerable<NewsItem>>(UnitOfWork.News.GetAll());
             var news = UnitOfWork.News.GetAllByFilter(Filter(filter)).ToList();
 
             Sort(sort, ref news);

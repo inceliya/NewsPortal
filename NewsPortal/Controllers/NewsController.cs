@@ -1,6 +1,6 @@
 ﻿using NewsPortal.BLL.Entities;
-using NewsPortal.BLL.IServices;
 using NewsPortal.BLL.Services;
+using NewsPortal.BLL.UnitOfWork;
 using NewsPortal.ExceptionLogger;
 using NewsPortal.Filters;
 using NewsPortal.ViewModels;
@@ -27,13 +27,13 @@ namespace NewsPortal.Controllers
     [ExceptionLogger]
     public class NewsController : Controller
     {
-        private INewsService NewsService;
-        private ICommentService CommentService;
+        private NewsService NewsService;
+        private CommentService CommentService;
 
-        public NewsController(INewsService ns, ICommentService cs)
+        public NewsController(IUnitOfWork unitOfWork)
         {
-            NewsService = ns;
-            CommentService = cs;
+            NewsService = new NewsService(unitOfWork);
+            CommentService = new CommentService(unitOfWork);
         }
 
         [HttpGet]

@@ -50,9 +50,9 @@
     <Compile Include="Entities\NewsItem.cs" />
     <Compile Include="Entities\PageInfo.cs" />
     <Compile Include="Infrastructure\ValidationException.cs" />
-    <Compile Include="IRepositories\ICommentRepository.cs" />
-    <Compile Include="IRepositories\INewsRepository.cs" />
-    <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="Repositories\ICommentRepository.cs" />
+    <Compile Include="Repositories\INewsRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="IServices\ICommentService.cs" />
     <Compile Include="IServices\INewsService.cs" />
     <Compile Include="IServices\IService.cs" />
@@ -62,7 +62,6 @@
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

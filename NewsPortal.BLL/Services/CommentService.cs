@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NewsPortal.BLL.Services
 {
-    public class CommentService : ICommentService
+    public class CommentService
     {
         private IUnitOfWork UnitOfWork { get; }
 
