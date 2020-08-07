@@ -42,7 +42,7 @@ namespace NewsPortal.Controllers
             int pageSize = Convert.ToInt32(ConfigurationManager.AppSettings["PageSizing"]); 
 
             var news = NewsService.GetAll(panel.Filter, panel.Sort, panel.Search, panel.Reverse);
-            news =news.Where(n => n.Visibility).ToList();
+            news = news.Where(n => n.Visibility).ToList();
             var newsViewModel = new List<NewsViewModel>();
             
             foreach (var newsItem in news)

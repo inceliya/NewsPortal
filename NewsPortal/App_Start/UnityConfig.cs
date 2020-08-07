@@ -5,12 +5,13 @@ using NewsPortal.BLL.UnitOfWork;
 using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
+using System.Configuration;
 
 namespace NewsPortal
 {
     public static class UnityConfig
     {
-        private static readonly string Connection = "xml";
+        private static readonly string Connection = ConfigurationManager.AppSettings["SaveData"];
 
         public static void RegisterComponents()
         {

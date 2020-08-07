@@ -19,11 +19,6 @@ namespace NewsPortal.DAL.Xml.UnitOfWork
             Comment = commentRepository;
         }
 
-        public void Commit()
-        {
-
-        }
-
         public void Dispose()
         {
 

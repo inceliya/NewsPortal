@@ -11,6 +11,5 @@ namespace NewsPortal.BLL.UnitOfWork
     {
         INewsRepository News { get; }
         ICommentRepository Comment { get; }
-        void Commit();
     }
 }

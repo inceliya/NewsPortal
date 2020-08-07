@@ -108,7 +108,7 @@
         }
         let titleError = document.querySelector("#titleError");
         let titleEditor = document.querySelector("#titleEditor");
-        if (titleEditor.innerHTML.length < 1) {
+        if (titleEditor.value.length < 1) {
             titleError.classList.remove("field-validation-valid");
             titleError.classList.add("field-validation-error");
             titleError.innerHTML = "Title is required";
@@ -120,7 +120,7 @@
             titleError.innerHTML = "";
         }
         let dateEditor = document.querySelector("#dateEditor");
-        if (dateEditor.innerHTML.length < 1) {
+        if (dateEditor.value.length < 1) {
             dateError.classList.remove("field-validation-valid");
             dateError.classList.add("field-validation-error");
             dateError.innerHTML = "Date is required";

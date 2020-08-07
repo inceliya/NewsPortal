@@ -1438,7 +1438,6 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal\b
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal\bin\Unity.Mvc5.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal\bin\WebGrease.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal\bin\NewsPortal.BLL.pdb
-D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal\bin\NewsPortal.BLL.dll.config
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal\bin\NewsPortal.DAL.Xml.pdb
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal\bin\NewsPortal.DAL.pdb
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal\bin\Iesi.Collections.xml

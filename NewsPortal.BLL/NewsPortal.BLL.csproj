@@ -49,7 +49,6 @@
     <Compile Include="Entities\Login.cs" />
     <Compile Include="Entities\NewsItem.cs" />
     <Compile Include="Entities\PageInfo.cs" />
-    <Compile Include="Infrastructure\ValidationException.cs" />
     <Compile Include="Repositories\ICommentRepository.cs" />
     <Compile Include="Repositories\INewsRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
