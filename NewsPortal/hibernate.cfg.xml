@@ -6,6 +6,7 @@
     <property name="dialect">NHibernate.Dialect.MsSql2008Dialect</property>
     <property name="connection.connection_string">Data Source=newsportal20200701104743dbserver.database.windows.net;Initial Catalog=NewsPortal20200701104743_db;User ID=adminDB;Password=Qwerty123456;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False</property>
     <property name="show_sql">true</property>
+    <property name="current_session_context_class">thread</property>
     <property name="format_sql">True</property>
   </session-factory>
 </hibernate-configuration>

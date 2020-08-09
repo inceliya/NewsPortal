@@ -9,7 +9,8 @@ namespace NewsPortal.BLL.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {
-        INewsRepository News { get; }
-        ICommentRepository Comment { get; }
+        //INewsRepository News { get; }
+        //ICommentRepository Comment { get; }
+        void Commit();
     }
 }

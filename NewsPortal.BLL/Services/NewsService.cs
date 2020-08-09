@@ -1,34 +1,41 @@
 ﻿using AutoMapper;
 using NewsPortal.BLL.Entities;
-using NewsPortal.BLL.IServices;
+using NewsPortal.BLL.Repositories;
 using NewsPortal.BLL.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace NewsPortal.BLL.Services
 {
     public class NewsService
     {
-        private IUnitOfWork UnitOfWork { get; }
+        private IUnitOfWorkFactory UnitOfWorkFactory { get; }
+        private INewsRepository NewsRepository { get; }
 
-        public NewsService(IUnitOfWork uow)
+        public NewsService(IUnitOfWorkFactory uowf, INewsRepository newsRepository)
         {
-            UnitOfWork = uow;
+            UnitOfWorkFactory = uowf;
+            NewsRepository = newsRepository;
         }
 
         public NewsItem Get(int id)
         {
-            var newsItem = UnitOfWork.News.Get(id);
+            NewsItem newsItem = null;
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                newsItem = NewsRepository.Get(id);
+            }
             return newsItem;
         }
 
-        public List<NewsItem> GetAll(string filter = "all", string sort = "date", string search = "", bool reverse = false)
+        public List<NewsItem> GetAll(string filter = "all", string sort = "date", string search = "", bool reverse = true)
         {
-            var news = UnitOfWork.News.GetAllByFilter(Filter(filter)).ToList();
+            var news = NewsRepository.GetAllByFilter(Filter(filter)).ToList();
 
             Sort(sort, ref news);
             Search(search, ref news);
@@ -67,18 +74,18 @@ namespace NewsPortal.BLL.Services
 
         private void Sort(string sort, ref List<NewsItem> news)
         {
-            Func<NewsItem, object> sortParam = n => n.PublicationDate;
+            Func<NewsItem, object> sortParam;
             switch (sort)
             {
-                case "date":
-                default:
-                    sortParam = n => n.PublicationDate;
-                    break;
                 case "title":
                     sortParam = n => n.Title.ToLower();
                     break;
                 case "description":
                     sortParam = n => n.Description.ToLower();
+                    break;
+                case "date":
+                default:
+                    sortParam = n => n.PublicationDate;
                     break;
             }
             news.OrderBy(sortParam);
@@ -92,17 +99,29 @@ namespace NewsPortal.BLL.Services
 
         public void Add(NewsItem newsItem)
         {
-            UnitOfWork.News.Add(newsItem);
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                NewsRepository.Add(newsItem);
+                unitOfWork.Commit();
+            }
         }
 
         public void Update(NewsItem newsItem)
         {
-            UnitOfWork.News.Update(newsItem);
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                NewsRepository.Update(newsItem);
+                unitOfWork.Commit();
+            }
         }
 
         public void Delete(int id)
         {
-            UnitOfWork.News.Delete(id);
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                NewsRepository.Delete(id);
+                unitOfWork.Commit();
+            }
         }
     }
 }

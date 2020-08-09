@@ -11,11 +11,20 @@
   </item>
   <item>
     <id>1</id>
-    <title>У меня в комнате сегодня всё хорошо было</title>
-    <description>&lt;p&gt;Комната просто лучшая я так считаю&lt;/p&gt;
+    <title>Всё отлично</title>
+    <description>&lt;p&gt;Идеально&lt;/p&gt;
 </description>
     <image>/Pictures/5221332e-4048-4b7e-8dd6-d2831d3560d71499377965_portal.jpg</image>
-    <publication_date>2020-08-03T20:28:00Z</publication_date>
+    <publication_date>2020-08-03T17:28:00</publication_date>
+    <visibility>true</visibility>
+  </item>
+  <item>
+    <id>2</id>
+    <title>Заголовок</title>
+    <description>&lt;p&gt;Описание&lt;/p&gt;
+</description>
+    <image>/Pictures/d121e628-f930-4f73-8054-0e0c5e7a0668template-1-1-768x432.jpg</image>
+    <publication_date>2020-08-09T21:29:00</publication_date>
     <visibility>true</visibility>
   </item>
 </NewsItem>

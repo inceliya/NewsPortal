@@ -1,4 +1,5 @@
 ﻿using NewsPortal.BLL.Entities;
+using NewsPortal.BLL.Repositories;
 using NewsPortal.BLL.Services;
 using NewsPortal.BLL.UnitOfWork;
 using NewsPortal.ExceptionLogger;
@@ -17,10 +18,10 @@ namespace NewsPortal.Controllers
         private NewsService NewsService { get; }
         private CommentService CommentService { get; }
 
-        public CommentController(IUnitOfWork unitOfWork)
+        public CommentController(IUnitOfWorkFactory unitOfWorkFactory, INewsRepository newsRepository, ICommentRepository commentRepositpry)
         {
-            NewsService = new NewsService(unitOfWork);
-            CommentService = new CommentService(unitOfWork);
+            NewsService = new NewsService(unitOfWorkFactory, newsRepository);
+            CommentService = new CommentService(unitOfWorkFactory, commentRepositpry);
         }
 
         [HttpGet]

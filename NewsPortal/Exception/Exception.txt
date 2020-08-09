@@ -3190,3 +3190,59 @@ An attempt to attach an auto-named database for file D:\Users10\Александр\Deskto
 News
 Index
 8/7/2020 9:35:59 AM
+
+No current session context configured.
+   at NHibernate.Context.CurrentSessionContext.GetCurrentSessionContext(ISessionFactory factory)
+   at NHibernate.Context.CurrentSessionContext.Bind(ISession session)
+   at NewsPortal.DAL.UnitOfWork.UnitOfWork..ctor(ISession session) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\UnitOfWork\UnitOfWork.cs:line 36
+   at NewsPortal.DAL.UnitOfWork.UnitOfWorkFactory.Create() in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\UnitOfWork\UnitOfWorkFactory.cs:line 15
+   at NewsPortal.BLL.Services.NewsService.Add(NewsItem newsItem) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\Services\NewsService.cs:line 97
+   at NewsPortal.Controllers.AdminController.Create(NewsViewModel newsItemViewModel, HttpPostedFileBase newsImg) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal\Controllers\AdminController.cs:line 87
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+Admin
+Create
+8/9/2020 9:12:53 PM
+
+No CurrentSessionContext configured (set the property current_session_context_class)!
+   at NHibernate.Impl.SessionFactoryImpl.GetCurrentSession()
+   at NewsPortal.Hibernate.HibernateHelper.GetSession() in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\NHibernate\HibernateHelper.cs:line 40
+   at NewsPortal.DAL.Repositories.Repository`1.get_Session() in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\Repositories\Repository.cs:line 20
+   at NewsPortal.DAL.Repositories.Repository`1.Get(Int32 id) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\Repositories\Repository.cs:line 26
+   at NewsPortal.BLL.Services.NewsService.Get(Int32 id) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\Services\NewsService.cs:line 30
+   at NewsPortal.Controllers.AdminController.Edit(Int32 id) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal\Controllers\AdminController.cs:line 99
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+Admin
+Edit
+8/9/2020 10:30:35 PM

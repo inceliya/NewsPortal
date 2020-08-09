@@ -11,8 +11,8 @@ using System.IO;
 using NewsPortal.BLL.Services;
 using NewsPortal.BLL.Entities;
 using System.Configuration;
-using NewsPortal.BLL.IServices;
 using NewsPortal.BLL.UnitOfWork;
+using NewsPortal.BLL.Repositories;
 
 namespace NewsPortal.Controllers
 {
@@ -24,10 +24,10 @@ namespace NewsPortal.Controllers
         private NewsService NewsService { get; set; }
         private CommentService CommentService { get; set; }
 
-        public AdminController(IUnitOfWork unitOfWork)
+        public AdminController(IUnitOfWorkFactory unitOfWorkFactory, INewsRepository newsRepository, ICommentRepository commentRepositpry)
         {
-            NewsService = new NewsService(unitOfWork);
-            CommentService = new CommentService(unitOfWork);
+            NewsService = new NewsService(unitOfWorkFactory, newsRepository);
+            CommentService = new CommentService(unitOfWorkFactory, commentRepositpry);
         }
 
         [HttpGet]

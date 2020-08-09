@@ -1,6 +1,4 @@
 using NewsPortal.BLL.Repositories;
-using NewsPortal.BLL.IServices;
-using NewsPortal.BLL.Services;
 using NewsPortal.BLL.UnitOfWork;
 using System.Web.Mvc;
 using Unity;
@@ -22,13 +20,13 @@ namespace NewsPortal
                 case "xml":
                     container.RegisterType<INewsRepository, DAL.Xml.Repositories.NewsRepository>();
                     container.RegisterType<ICommentRepository, DAL.Xml.Repositories.CommentRepository>();
-                    container.RegisterType<IUnitOfWork, DAL.Xml.UnitOfWork.UnitOfWork>();
+                    container.RegisterType<IUnitOfWorkFactory, DAL.Xml.UnitOfWork.UnitOfWorkFactory>();
                     break;
                 case "db":
                 default:
                     container.RegisterType<INewsRepository, DAL.Repositories.NewsRepository>();
                     container.RegisterType<ICommentRepository, DAL.Repositories.CommentRepository>();
-                    container.RegisterType<IUnitOfWork, DAL.UnitOfWork.UnitOfWork>();
+                    container.RegisterType<IUnitOfWorkFactory, DAL.UnitOfWork.UnitOfWorkFactory>();
                     break;
             }
 

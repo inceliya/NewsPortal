@@ -47,7 +47,7 @@
     <Compile Include="Repositories\CommentRepository.cs" />
     <Compile Include="Repositories\NewsRepository.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
-    <Compile Include="XML\XmlHelper.cs" />
+    <Compile Include="UnitOfWork\UnitOfWorkFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NewsPortal.BLL\NewsPortal.BLL.csproj">

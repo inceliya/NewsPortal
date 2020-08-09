@@ -1,5 +1,5 @@
 ﻿using NewsPortal.BLL.Entities;
-using NewsPortal.BLL.IServices;
+using NewsPortal.BLL.Repositories;
 using NewsPortal.BLL.UnitOfWork;
 using System;
 using System.Collections.Generic;
@@ -11,44 +11,58 @@ namespace NewsPortal.BLL.Services
 {
     public class CommentService
     {
-        private IUnitOfWork UnitOfWork { get; }
+        private IUnitOfWorkFactory UnitOfWorkFactory { get; }
+        private ICommentRepository CommentRepository { get; }
 
-        public CommentService(IUnitOfWork uow)
+        public CommentService(IUnitOfWorkFactory uowf, ICommentRepository commentRepository)
         {
-            UnitOfWork = uow;
+            UnitOfWorkFactory = uowf;
+            CommentRepository = commentRepository;
         }
 
         public Comment Get(int id)
         {
-            var comment = UnitOfWork.Comment.Get(id);
+            var comment = CommentRepository.Get(id);
             return comment;
         }
 
         public List<Comment> GetByNewsId(int id)
         {
-            var comments = UnitOfWork.Comment.GetByNewsId(id);
+            var comments = CommentRepository.GetByNewsId(id);
             return comments.ToList();
         }
 
         public List<Comment> GetAll()
         {
-            var comments = UnitOfWork.Comment.GetAll();
+            var comments = CommentRepository.GetAll();
             return comments.ToList();
         }
 
         public void Add(Comment comment)
         {
-            UnitOfWork.Comment.Add(comment);
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                CommentRepository.Add(comment);
+                unitOfWork.Commit();
+            }
         }
 
         public void Update(Comment comment)
         {
-            UnitOfWork.Comment.Update(comment);
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                CommentRepository.Update(comment);
+                unitOfWork.Commit();
+            }
         }
 
         public void Delete(int id)
         {
-            UnitOfWork.Comment.Delete(id);
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                CommentRepository.Delete(id);
+                unitOfWork.Commit();
+            }
         }
     }
 }
