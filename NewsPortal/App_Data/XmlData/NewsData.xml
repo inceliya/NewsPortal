@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <NewsItem>
+  <max_id>4</max_id>
   <item>
     <id>0</id>
     <title>Вирвали майже 1400 рослин маку, зібрали коноплю в парнику</title>
@@ -26,5 +27,23 @@
     <image>/Pictures/d121e628-f930-4f73-8054-0e0c5e7a0668template-1-1-768x432.jpg</image>
     <publication_date>2020-08-09T21:29:00</publication_date>
     <visibility>true</visibility>
+  </item>
+  <item>
+    <id>3</id>
+    <title>Відносно</title>
+    <description>&lt;p&gt;Відносно порушників склали 21 адміністративний протокол.&lt;/p&gt;
+</description>
+    <image>/Pictures/a43b4442-0551-4e67-b2e6-102d7062816bphoto_2019-09-03_10-33-07.jpg</image>
+    <publication_date>2020-08-10T17:57:00</publication_date>
+    <visibility>true</visibility>
+  </item>
+  <item>
+    <id>4</id>
+    <title>Brother?</title>
+    <description>&lt;p&gt;Brother?&lt;/p&gt;
+</description>
+    <image>/Pictures/38b3c8dc-1fbc-42a2-8e6a-dc5401e481ccf4fbc1fa9bd2a2f1e4cb9f6cde3ffbef.jpg</image>
+    <publication_date>2020-08-09T15:07:00</publication_date>
+    <visibility>false</visibility>
   </item>
 </NewsItem>

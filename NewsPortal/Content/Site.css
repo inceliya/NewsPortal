@@ -72,6 +72,10 @@ textarea {
         display: block;
         padding: 5px 0;
     }
+
+    .search{
+        width: 150px;
+    }
 }
 
 .description{

@@ -15,7 +15,6 @@ namespace NewsPortal.DAL.Xml.Repositories
 {
     public class NewsRepository : INewsRepository
     {
-        //private string FilePath = HttpContext.Current.Server.MapPath("~/App_Data/XmlData/NewsData.xml");
         private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["NewsXmlFilePath"]);
         protected List<NewsItem> News;
         protected XDocument ItemsData;
@@ -59,7 +58,8 @@ namespace NewsPortal.DAL.Xml.Repositories
         {
             if (!string.IsNullOrEmpty(ItemsData.Root.Value))
             {
-                newsItem.Id = (int)(from s in ItemsData.Descendants("item") orderby (int)s.Element("id") descending select (int)s.Element("id")).FirstOrDefault() + 1;
+                newsItem.Id = (int)(ItemsData.Root.Element("max_id")) + 1;
+                ItemsData.Root.SetElementValue("max_id", newsItem.Id);
             }
             else
             {

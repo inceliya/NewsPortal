@@ -13,7 +13,6 @@
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top minnav">
         <div class="container">
-
             @Html.ActionLink("NewsPortal", "Index", ViewContext.RouteData.Values["controller"].ToString(), new { area = "" }, new { @class = "navbar-brand" })
             <div class="flag pull-right">
                 <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "uk" })">

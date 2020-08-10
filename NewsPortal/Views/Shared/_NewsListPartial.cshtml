@@ -20,29 +20,29 @@
 
 }
 
-    <div class="paging">
-        @if (Model.PageInfo.PageNumber > 3)
+<div class="paging">
+    @if (Model.PageInfo.PageNumber > 3)
+    {
+        @Html.ActionLink("<<", "Index", controller, new { page = 1, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }, new { @class = "btn btn-default" });
+    }
+    @if (Model.PageInfo.PageNumber > 1)
+    {
+        @Html.ActionLink("<", "Index", controller, new { page = Model.PageInfo.PageNumber - 1, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }, new { @class = "btn btn-default" });
+    }
+    @if (Model.PageInfo.TotalPages > 1)
+    {
+        for (int page = ((Model.PageInfo.PageNumber > 3) ? Model.PageInfo.PageNumber - 2 : 1); (page < Model.PageInfo.PageNumber + 3 && page <= Model.PageInfo.TotalPages); page++)
         {
-            @Html.ActionLink("<<", "Index", controller, new { page = 1, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }, new { @class = "btn btn-default" });
+            @Html.ActionLink(page.ToString(), "Index", controller, new { page = page, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] },
+           new { @class = ((page == Model.PageInfo.PageNumber) ? "btn btn-info" : "btn btn-default") });
         }
-        @if (Model.PageInfo.PageNumber > 1)
-        {
-            @Html.ActionLink("<", "Index", controller, new { page = Model.PageInfo.PageNumber - 1, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }, new { @class = "btn btn-default" });
-        }
-        @if (Model.PageInfo.TotalPages > 1)
-        {
-            for (int page = ((Model.PageInfo.PageNumber > 3) ? Model.PageInfo.PageNumber - 2 : 1); (page < Model.PageInfo.PageNumber + 3 && page <= Model.PageInfo.TotalPages); page++)
-            {
-                @Html.ActionLink(page.ToString(), "Index", controller, new { page = page, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] },
-               new { @class = ((page == Model.PageInfo.PageNumber) ? "btn btn-info" : "btn btn-default") });
-            }
-        }
-        @if (Model.PageInfo.TotalPages > Model.PageInfo.PageNumber)
-        {
-            @Html.ActionLink(">", "Index", controller, new { page = Model.PageInfo.PageNumber + 1, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }, new { @class = "btn btn-default" });
-        }
-        @if (Model.PageInfo.TotalPages - Model.PageInfo.PageNumber > 2)
-        {
-            @Html.ActionLink(">>", "Index", controller, new { page = Model.PageInfo.TotalPages, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }, new { @class = "btn btn-default" });
-        }
-    </div>
+    }
+    @if (Model.PageInfo.TotalPages > Model.PageInfo.PageNumber)
+    {
+        @Html.ActionLink(">", "Index", controller, new { page = Model.PageInfo.PageNumber + 1, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }, new { @class = "btn btn-default" });
+    }
+    @if (Model.PageInfo.TotalPages - Model.PageInfo.PageNumber > 2)
+    {
+        @Html.ActionLink(">>", "Index", controller, new { page = Model.PageInfo.TotalPages, sort = Request.QueryString["sort"], filter = Request.QueryString["filter"], search = Request.QueryString["search"], reverse = Request.QueryString["reverse"] }, new { @class = "btn btn-default" });
+    }
+</div>

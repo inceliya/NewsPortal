@@ -14,7 +14,6 @@ namespace NewsPortal.DAL.Xml.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
-        //private string FilePath = HttpContext.Current.Server.MapPath("~/App_Data/XmlData/CommentData.xml");
         private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["CommentXmlFilePath"]);
 
         protected List<Comment> Comments;
@@ -60,7 +59,8 @@ namespace NewsPortal.DAL.Xml.Repositories
         {
             if (!string.IsNullOrEmpty(ItemsData.Root.Value))
             {
-                comment.Id = (int)(from s in ItemsData.Descendants("item") orderby (int)s.Element("id") descending select (int)s.Element("id")).FirstOrDefault() + 1;
+                comment.Id = (int)(ItemsData.Root.Element("max_id")) + 1;
+                ItemsData.Root.SetElementValue("max_id", comment.Id);
             }
             else
             {
