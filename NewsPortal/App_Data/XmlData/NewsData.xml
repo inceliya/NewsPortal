@@ -1,58 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <NewsItem>
-  <max_id>5</max_id>
+  <max_id>6</max_id>
   <item>
-    <id>0</id>
-    <title>Вирвали майже 1400 рослин маку, зібрали коноплю в парнику</title>
-    <description>&lt;p&gt;Вирвали траву&lt;/p&gt;
-</description>
-    <image>/Pictures/737934dc-a157-45ed-9a2e-b7f996bfc0a2_79451-56.jpg</image>
-    <publication_date>2020-08-03T17:27:00</publication_date>
-    <visibility>true</visibility>
-  </item>
-  <item>
-    <id>1</id>
-    <title>Всё отлично</title>
-    <description>&lt;p&gt;Идеально&lt;/p&gt;
-</description>
-    <image>/Pictures/5221332e-4048-4b7e-8dd6-d2831d3560d71499377965_portal.jpg</image>
-    <publication_date>2020-08-03T17:28:00</publication_date>
-    <visibility>true</visibility>
-  </item>
-  <item>
-    <id>2</id>
-    <title>Заголовок</title>
-    <description>&lt;p&gt;Описание&lt;/p&gt;
-</description>
-    <image>/Pictures/d121e628-f930-4f73-8054-0e0c5e7a0668template-1-1-768x432.jpg</image>
-    <publication_date>2020-08-09T21:29:00</publication_date>
-    <visibility>true</visibility>
-  </item>
-  <item>
-    <id>3</id>
-    <title>Відносно</title>
-    <description>&lt;p&gt;Відносно порушників склали 21 адміністративний протокол.&lt;/p&gt;
-</description>
-    <image>/Pictures/a43b4442-0551-4e67-b2e6-102d7062816bphoto_2019-09-03_10-33-07.jpg</image>
-    <publication_date>2020-08-10T11:57:00</publication_date>
-    <visibility>true</visibility>
-  </item>
-  <item>
-    <id>4</id>
-    <title>Brother?</title>
-    <description>&lt;p&gt;Brother?&lt;/p&gt;
-</description>
-    <image>/Pictures/38b3c8dc-1fbc-42a2-8e6a-dc5401e481ccf4fbc1fa9bd2a2f1e4cb9f6cde3ffbef.jpg</image>
-    <publication_date>2020-08-09T15:07:00</publication_date>
-    <visibility>false</visibility>
-  </item>
-  <item>
-    <id>5</id>
+    <id>6</id>
     <title>Вітаємо!</title>
-    <description>&lt;p style="text-align:right"&gt;&lt;strong&gt;&lt;em&gt;АХАХАХХА&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+    <description>&lt;p&gt;Картинки видалено&lt;/p&gt;
 </description>
-    <image>/Pictures/4556be58-5c26-49b0-b944-daecc0f7f20241f7a2dd1cab16a4212c405fdaa76edc.jpg</image>
-    <publication_date>2020-08-10T18:07:00</publication_date>
+    <image>/Pictures/9e5b69ab-3381-4206-9353-bf69cd4f3a43kartinki-na-avatarku-dlya-parnej-i-muzhchin-60-650x549.jpg</image>
+    <publication_date>2020-08-10T13:22:00</publication_date>
     <visibility>true</visibility>
   </item>
 </NewsItem>

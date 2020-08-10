@@ -182,6 +182,7 @@ namespace NewsPortal.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             NewsService.Delete(id);
+            Helpers.PictureDelete.Delete(Server, Url, NewsService, CommentService, id);
             return RedirectToAction("Index");
         }
 
@@ -190,7 +191,7 @@ namespace NewsPortal.Controllers
             List<string> cultures = new List<string>() { "uk", "en", "ru" };
             if (!cultures.Contains(language))
             {
-                language = "en";
+                language = "en";   
             }
             return RedirectToAction("", new { language });
         }

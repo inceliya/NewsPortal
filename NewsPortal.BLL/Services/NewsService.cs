@@ -131,6 +131,7 @@ namespace NewsPortal.BLL.Services
         {
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
+
                 NewsRepository.Delete(id);
                 unitOfWork.Commit();
             }
