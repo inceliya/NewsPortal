@@ -163,7 +163,6 @@ D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.dll
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.dll
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Remotion.Linq.EagerFetching.dll
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.pdb
-D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.BLL.dll.config
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.xml
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Iesi.Collections.xml
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NHibernate.xml

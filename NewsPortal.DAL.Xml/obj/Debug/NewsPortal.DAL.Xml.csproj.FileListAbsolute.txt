@@ -25,3 +25,12 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal.D
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.csproj.CopyComplete
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.pdb
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.DAL.Xml.dll
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.DAL.Xml.pdb
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.BLL.dll
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\bin\Debug\NewsPortal.BLL.pdb
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.csprojAssemblyReference.cache
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.csproj.CoreCompileInputs.cache
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.csproj.CopyComplete
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.dll
+D:\апап\NewsPortal\NewsPortal.DAL.Xml\obj\Debug\NewsPortal.DAL.Xml.pdb

@@ -974,7 +974,6 @@ D:\апап\NewsPortal\NewsPortal\bin\System.Web.WebPages.dll
 D:\апап\NewsPortal\NewsPortal\bin\System.Web.WebPages.Razor.dll
 D:\апап\NewsPortal\NewsPortal\bin\WebGrease.dll
 D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.BLL.pdb
-D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.BLL.dll.config
 D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.DAL.pdb
 D:\апап\NewsPortal\NewsPortal\bin\Iesi.Collections.xml
 D:\апап\NewsPortal\NewsPortal\bin\NHibernate.xml

@@ -17,7 +17,6 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\Ne
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CopyComplete
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\SN\NewsPortalNhibernate\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.pdb
-D:\апап\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.dll.config
 D:\апап\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.dll
 D:\апап\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.pdb
 D:\апап\NewsPortal\NewsPortal.BLL\bin\Debug\AutoMapper.dll

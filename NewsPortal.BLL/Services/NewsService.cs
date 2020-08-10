@@ -81,7 +81,7 @@ namespace NewsPortal.BLL.Services
                     sortParam = n => n.Title.ToLower();
                     break;
                 case "description":
-                    sortParam = n => n.Description.ToLower();
+                    sortParam = n =>GetText(n.Description.ToLower());
                     break;
                 case "date":
                 default:
@@ -90,11 +90,23 @@ namespace NewsPortal.BLL.Services
             }
             news.OrderBy(sortParam);
         }
+        private string GetText(string text)
+        {
+            Regex r = new Regex(@"<[^>]*>");
+            MatchCollection matches = r.Matches(text);
+            for (int i = 0; i < matches.Count; i++)
+            {
+                int index = text.IndexOf(matches[i].Value.ToString());
+                text = text.Remove(index, matches[i].Value.Length);
+
+            }
+            return text;
+        }
 
         private void Search(string search, ref List<NewsItem> news)
         {
             if (!string.IsNullOrEmpty(search))
-                news = news.Where(n => n.Title.ToLower().Contains(search) || n.Description.ToLower().Contains(search)).ToList();
+                news = news.Where(n => n.Title.ToLower().Contains(search.ToLower()) || GetText(n.Description.ToLower()).Contains(search.ToLower())).ToList();
         }
 
         public void Add(NewsItem newsItem)

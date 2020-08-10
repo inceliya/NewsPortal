@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <NewsItem>
-  <max_id>4</max_id>
+  <max_id>5</max_id>
   <item>
     <id>0</id>
     <title>Вирвали майже 1400 рослин маку, зібрали коноплю в парнику</title>
-    <description>&lt;p&gt;Вырвали траву&lt;/p&gt;
+    <description>&lt;p&gt;Вирвали траву&lt;/p&gt;
 </description>
     <image>/Pictures/737934dc-a157-45ed-9a2e-b7f996bfc0a2_79451-56.jpg</image>
-    <publication_date>2020-08-03T20:27:00Z</publication_date>
+    <publication_date>2020-08-03T17:27:00</publication_date>
     <visibility>true</visibility>
   </item>
   <item>
@@ -34,7 +34,7 @@
     <description>&lt;p&gt;Відносно порушників склали 21 адміністративний протокол.&lt;/p&gt;
 </description>
     <image>/Pictures/a43b4442-0551-4e67-b2e6-102d7062816bphoto_2019-09-03_10-33-07.jpg</image>
-    <publication_date>2020-08-10T17:57:00</publication_date>
+    <publication_date>2020-08-10T11:57:00</publication_date>
     <visibility>true</visibility>
   </item>
   <item>
@@ -45,5 +45,14 @@
     <image>/Pictures/38b3c8dc-1fbc-42a2-8e6a-dc5401e481ccf4fbc1fa9bd2a2f1e4cb9f6cde3ffbef.jpg</image>
     <publication_date>2020-08-09T15:07:00</publication_date>
     <visibility>false</visibility>
+  </item>
+  <item>
+    <id>5</id>
+    <title>Вітаємо!</title>
+    <description>&lt;p style="text-align:right"&gt;&lt;strong&gt;&lt;em&gt;АХАХАХХА&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    <image>/Pictures/4556be58-5c26-49b0-b944-daecc0f7f20241f7a2dd1cab16a4212c405fdaa76edc.jpg</image>
+    <publication_date>2020-08-10T18:07:00</publication_date>
+    <visibility>true</visibility>
   </item>
 </NewsItem>
