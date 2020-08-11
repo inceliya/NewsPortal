@@ -78,7 +78,8 @@ namespace NewsPortal.BLL.Services
                     sortParam = n => n.PublicationDate;
                     break;
             }
-            news.OrderBy(sortParam);
+            news= news.OrderBy(sortParam).ToList();
+            
         }
         private string GetText(string text)
         {
