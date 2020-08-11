@@ -147,3 +147,6 @@ textarea {
     justify-content: center;
     flex-direction: row;
 }
+img.col-lg-12{
+    width:100%;
+}

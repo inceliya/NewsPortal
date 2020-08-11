@@ -68,16 +68,19 @@
 
 @media screen and (max-width:1000px) {
     .news-item {
-        width: 420px;
+        width: 360px;
         margin: 5px auto;
-        padding: 10px;
+        padding: 15px;
         display: grid;
-        grid-template-columns: 200px 200px;
+        grid-template-columns: 180px 180px;
         grid-template-rows: auto auto auto auto !important;
         grid-template-areas: "t t" "i i" "d d" "date b";
         border: 1px solid lightgrey;
     }
-
+    .news-item img {
+        width: 330px;
+        height: auto;
+    }
     .news-item > div:nth-child(4) {
         text-align: justify;
         text-indent: 0em;
@@ -94,5 +97,22 @@
         text-indent: 0;
         font-weight: 400;
         text-align: center;
+        padding-left: 0;
+        max-width:330px;
+    }
+    #search {
+        float:left !important;
+        max-width:130px;
+    }
+    .navbar-brand {
+        padding:15px 5px;
+    }
+    .flag.pull-right{
+        float:left !important;
+    }
+    .news-item .buttons-in-admin {
+        grid-area: b;
+        text-align: left;
+        z-index: 2;
     }
 }
