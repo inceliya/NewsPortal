@@ -13,7 +13,7 @@
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top minnav">
         <div class="container">
-            @Html.ActionLink("NewsPortal", "Index", ViewContext.RouteData.Values["controller"].ToString(), new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("NewsPortal", "Index", "News", new { area = "" }, new { @class = "navbar-brand" })
             <div class="flag pull-right">
                 <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "uk" })">
                     <img width="30" src="~/Resources/Icons/iconfinder_Flag_of_Ukraine_96351.png" alt="uk" />

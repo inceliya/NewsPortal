@@ -48,28 +48,18 @@ namespace NewsPortal.BLL.Services
 
         private Expression<Func<NewsItem, bool>> Filter(string filter)
         {
-            DateTime firstDate = DateTime.Today;
-            DateTime secondDate = new DateTime(9999, 12, 31, 23, 59, 59);
             switch (filter)
             {
                 case "today":
-                    firstDate = DateTime.Today;
-                    secondDate = DateTime.Today.AddDays(1);
-                    break;
+                    return n => n.PublicationDate == DateTime.Today;
                 case "yesterday":
-                    firstDate = DateTime.Today.AddDays(-1);
-                    secondDate = DateTime.Today;
-                    break;
+                    return n => n.PublicationDate.Day == DateTime.Today.AddDays(-1).Day && n.PublicationDate.Day <= DateTime.Today.Day;
                 case "week":
-                    firstDate = DateTime.Today.AddDays(-7);
-                    secondDate = DateTime.Today.AddDays(+1);
-                    break;
+                    return n => n.PublicationDate.Day >= DateTime.Today.AddDays(-7).Day && n.PublicationDate.Day <= DateTime.Today.Day;
+                case "all":
                 default:
-                    firstDate = new DateTime(1754, 1, 1, 0, 0, 0);
-                    secondDate = new DateTime(9999, 12, 31, 23, 59, 59);
-                    break;
+                    return n => n.PublicationDate <= DateTime.MaxValue;
             }
-            return n => n.PublicationDate.Date >= firstDate && n.PublicationDate.Date <= secondDate;
         }
 
         private void Sort(string sort, ref List<NewsItem> news)
@@ -81,7 +71,7 @@ namespace NewsPortal.BLL.Services
                     sortParam = n => n.Title.ToLower();
                     break;
                 case "description":
-                    sortParam = n =>GetText(n.Description.ToLower());
+                    sortParam = n => GetText(n.Description.ToLower());
                     break;
                 case "date":
                 default:

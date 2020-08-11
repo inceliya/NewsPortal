@@ -25,7 +25,7 @@ namespace NewsPortal.ViewModels
             model.Sort = (string.IsNullOrEmpty(request.Params["sort"])) ? "date" : request.Params["sort"];
             model.Search = (string.IsNullOrEmpty(request.Params["search"])) ? "" : request.Params["search"];
             var reverse = request.Params["reverse"];
-            model.Reverse = string.IsNullOrEmpty(reverse) || reverse.ToLower() == "true";
+            model.Reverse = ((request.Params["reverse"] ?? "").ToLower() == "true");
             return model;
         }
     }

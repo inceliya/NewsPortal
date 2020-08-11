@@ -3445,3 +3445,118 @@ Could not find stored procedure 'dbo.aspnet_CheckSchemaVersion'.
 Account
 Login
 11.08.2020 14:27:36
+
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\Views\Shared\_Layout.cshtml(18): error CS1002: ; expected
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClass40_0.<RenderPageCore>b__0(TextWriter writer)
+   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+News
+Index
+8/11/2020 9:06:31 PM
+
+Could not determine member type from Constant, True, System.Linq.Expressions.ConstantExpression
+   at NHibernate.Impl.ExpressionProcessor.ProcessBooleanExpression(Expression expression)
+   at NHibernate.Impl.ExpressionProcessor.ProcessExpression(Expression expression)
+   at NHibernate.Criterion.QueryOver`2.Add(Expression`1 expression)
+   at NHibernate.Criterion.QueryOver`2.NHibernate.IQueryOver<TRoot,TSubType>.Where(Expression`1 expression)
+   at NewsPortal.DAL.Repositories.NewsRepository.GetAllByFilter(Expression`1 filter) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\Repositories\NewsRepository.cs:line 19
+   at NewsPortal.BLL.Services.NewsService.GetAll(String filter, String sort, String search, Boolean reverse) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\Services\NewsService.cs:line 38
+   at NewsPortal.Controllers.NewsController.Index(PanelViewModel panel) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal\Controllers\NewsController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+News
+Index
+8/11/2020 9:24:48 PM
+
+could not execute query
+[ SELECT this_.Id as Id0_0_, this_.Title as Title0_0_, this_.Description as Descript3_0_0_, this_.Image as Image0_0_, this_.PublicationDate as Publicat5_0_0_, this_.Visibility as Visibility0_0_ FROM NewsItem this_ WHERE (this_.PublicationDate >= @p0 and this_.PublicationDate <= @p1) ]
+  Name:cp0 - Value:01.01.0001 0:00:00  Name:cp1 - Value:31.12.9999 23:59:59
+[SQL: SELECT this_.Id as Id0_0_, this_.Title as Title0_0_, this_.Description as Descript3_0_0_, this_.Image as Image0_0_, this_.PublicationDate as Publicat5_0_0_, this_.Visibility as Visibility0_0_ FROM NewsItem this_ WHERE (this_.PublicationDate >= @p0 and this_.PublicationDate <= @p1)]
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List[T]()
+   at NHibernate.Criterion.QueryOver`1.List()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.List()
+   at NewsPortal.DAL.Repositories.NewsRepository.GetAllByFilter(Expression`1 filter) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\Repositories\NewsRepository.cs:line 20
+   at NewsPortal.BLL.Services.NewsService.GetAll(String filter, String sort, String search, Boolean reverse) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\Services\NewsService.cs:line 38
+   at NewsPortal.Controllers.NewsController.Index(PanelViewModel panel) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal\Controllers\NewsController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+News
+Index
+8/11/2020 9:29:15 PM
+
+Ссылка на объект не указывает на экземпляр объекта.
+   в NewsPortal.ViewModels.PanelModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext) в C:\Users\nikos\source\repos\NewsPortal\NewsPortal\ViewModels\PanelModelBinder.cs:строка 28
+   в System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   в System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+News
+Index
+11.08.2020 21:35:05
+
+Ссылка на объект не указывает на экземпляр объекта.
+   в NewsPortal.ViewModels.PanelModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext) в C:\Users\nikos\source\repos\NewsPortal\NewsPortal\ViewModels\PanelModelBinder.cs:строка 28
+   в System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   в System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+News
+Index
+11.08.2020 21:35:42
