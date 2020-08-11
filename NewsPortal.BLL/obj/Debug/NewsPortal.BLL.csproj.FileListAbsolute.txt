@@ -62,3 +62,11 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal.B
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CopyComplete
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\AA\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\prep\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\prep\NewsPortal\NewsPortal.BLL\bin\Debug\NewsPortal.BLL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\prep\NewsPortal\NewsPortal.BLL\bin\Debug\AutoMapper.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\prep\NewsPortal\NewsPortal.BLL\bin\Debug\AutoMapper.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\prep\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\prep\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\prep\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\prep\NewsPortal\NewsPortal.BLL\obj\Debug\NewsPortal.BLL.pdb

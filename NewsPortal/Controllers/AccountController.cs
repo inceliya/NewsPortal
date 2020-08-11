@@ -1,30 +1,41 @@
-﻿using NewsPortal.ExceptionLogger;
+﻿using NewsPortal.BLL.Entities;
+using NewsPortal.BLL.Services;
+using NewsPortal.BLL.UnitOfWork;
+using NewsPortal.DAL.Repositories;
+using NewsPortal.ExceptionLogger;
 using NewsPortal.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
 namespace NewsPortal.Controllers
 {
+    [ExceptionLogger]
     public class AccountController : Controller
-    {
+    { 
+
         [HttpGet]
-        [ExceptionLogger]
         public ActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
-        [ExceptionLogger]
         public ActionResult Login(LoginViewModel model, string returnUrl)
         {
             if (ModelState.IsValid)
             {
-                if (FormsAuthentication.Authenticate(model.UserName, model.Password))
+                byte[] passwordBytes = ASCIIEncoding.ASCII.GetBytes(model.Password);
+                byte[] hashBytes = new MD5CryptoServiceProvider().ComputeHash(passwordBytes);
+                string hash = ByteArrayToString(hashBytes);
+                LoginRepository lr = new LoginRepository();
+                var login = lr.GetUserByLogin(model.UserName);
+                if (login != null && hash == login.Password)
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, false);
                     return Redirect(returnUrl ?? Url.Action("Index", "Admin"));
@@ -39,6 +50,17 @@ namespace NewsPortal.Controllers
             {
                 return View();
             }
+        }
+
+        static string ByteArrayToString(byte[] arrInput)
+        {
+            int i;
+            StringBuilder sOutput = new StringBuilder(arrInput.Length);
+            for (i = 0; i < arrInput.Length; i++)
+            {
+                sOutput.Append(arrInput[i].ToString("X2"));
+            }
+            return sOutput.ToString();
         }
     }
 }
