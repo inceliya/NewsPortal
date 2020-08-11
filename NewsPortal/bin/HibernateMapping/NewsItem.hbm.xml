@@ -13,12 +13,5 @@
     <property name="Image"/>
     <property name="PublicationDate"/>
     <property name="Visibility"/>
-    <!--<bag name="Comments"
-         lazy="false"
-         inverse="true"
-         cascade="all-delete-orphan">
-      <key column="NewsId"/>
-      <one-to-many class="CommentDTO"></one-to-many>
-    </bag>-->
   </class>
 </hibernate-mapping>

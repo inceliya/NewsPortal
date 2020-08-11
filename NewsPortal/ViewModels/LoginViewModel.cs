@@ -9,6 +9,8 @@ namespace NewsPortal.ViewModels
 {
     public class LoginViewModel
     {
+        public int Id { get; set; }
+
         [Required]
         public string UserName { get; set; }
 
@@ -20,6 +22,7 @@ namespace NewsPortal.ViewModels
 
         public LoginViewModel(Login login)
         {
+            Id = login.Id;
             UserName = login.UserName;
             Password = login.Password;
         }

@@ -4,14 +4,11 @@
                    assembly="NewsPortal.BLL"
                    namespace="NewsPortal.BLL.Entities">
 
-  <class name="NewsItem" lazy="false">
+  <class name="Login" lazy="false">
     <id name="Id">
       <generator class="native"/>
     </id>
-    <property name="Title"/>
-    <property name="Description"/>
-    <property name="Image"/>
-    <property name="PublicationDate"/>
-    <property name="Visibility"/>
+    <property name="UserName"/>
+    <property name="Password"/>
   </class>
 </hibernate-mapping>

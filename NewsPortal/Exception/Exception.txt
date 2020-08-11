@@ -3365,3 +3365,46 @@ Unexpected "if" keyword after "@" character.  Once inside code, you do not need 
 News
 Index
 8/10/2020 11:13:03 PM
+
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\HibernateMapping\Login.hbm.xml(8,6): XML validation error: Ёлемент "class" в пространстве имен "urn:nhibernate-mapping-2.2" имеет недопустимый дочерний элемент "property" в пространстве имен "urn:nhibernate-mapping-2.2". —писок ожидаемых элементов: "meta, subselect, cache, synchronize, comment, tuplizer, id, composite-id" в пространстве имен "urn:nhibernate-mapping-2.2".
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.ValidationHandler(Object o, ValidationEventArgs args)
+   at System.Xml.Schema.XmlSchemaValidator.SendValidationEvent(ValidationEventHandler eventHandler, Object sender, XmlSchemaValidationException e, XmlSeverityType severity)
+   at System.Xml.Schema.XmlSchemaValidator.ElementValidationError(XmlQualifiedName name, ValidationState context, ValidationEventHandler eventHandler, Object sender, String sourceUri, Int32 lineNo, Int32 linePos, XmlSchemaSet schemaSet)
+   at System.Xml.Schema.XmlSchemaValidator.ValidateElementContext(XmlQualifiedName elementName, Boolean& invalidElementInContext)
+   at System.Xml.Schema.XmlSchemaValidator.ValidateElement(String localName, String namespaceUri, XmlSchemaInfo schemaInfo, String xsiType, String xsiNil, String xsiSchemaLocation, String xsiNoNamespaceSchemaLocation)
+   at System.Xml.XsdValidatingReader.ProcessElementEvent()
+   at System.Xml.XsdValidatingReader.ProcessReaderEvent()
+   at System.Xml.XsdValidatingReader.Read()
+   at System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at NHibernate.Cfg.Configuration.LoadMappingDocument(XmlReader hbmReader, String name)
+   at NHibernate.Cfg.Configuration.AddXmlFile(String xmlFile)
+   at NHibernate.Cfg.Configuration.AddFile(String xmlFile)
+   at NewsPortal.Hibernate.HibernateHelper.get_SessionFactory() in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\NHibernate\HibernateHelper.cs:line 31
+   at NewsPortal.Hibernate.HibernateHelper.OpenSession() in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\NHibernate\HibernateHelper.cs:line 47
+   at NewsPortal.DAL.Repositories.NewsRepository.GetAllByFilter(Expression`1 filter) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\Repositories\NewsRepository.cs:line 17
+   at NewsPortal.BLL.Services.NewsService.GetAll(String filter, String sort, String search, Boolean reverse) in D:\апап\NewsPortal\NewsPortal.BLL\Services\NewsService.cs:line 38
+   at NewsPortal.Controllers.NewsController.Index(PanelViewModel panel) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal\Controllers\NewsController.cs:line 52
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+News
+Index
+8/11/2020 9:40:55 AM

@@ -28,6 +28,7 @@ namespace NewsPortal.Hibernate
                         cfg.CurrentSessionContext<WebSessionContext>();
                         cfg.AddFile(HttpContext.Current.Server.MapPath(@"~\HibernateMapping\NewsItem.hbm.xml"));
                         cfg.AddFile(HttpContext.Current.Server.MapPath(@"~\HibernateMapping\Comment.hbm.xml"));
+                        cfg.AddFile(HttpContext.Current.Server.MapPath(@"~\HibernateMapping\Login.hbm.xml"));
                         new SchemaUpdate(cfg).Execute(true, true);
                         _sessionFactory = cfg.BuildSessionFactory();
                     }

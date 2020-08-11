@@ -12,6 +12,5 @@
     <property name="Author"/>
     <property name="Text"/>
     <property name="CreationDate"/>
-    <!--<many-to-one not-null="true" name="NewsItem" column="NewsId"/>-->
   </class>
 </hibernate-mapping>
