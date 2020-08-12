@@ -30,7 +30,7 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li>
-                            <a id="sortDate" name="sorting" href="@Html.IndexUrl(Request, "sort", "date", false)">@Resources.Resource.NewFirst</a>
+                            <a id="sortDate" name="sorting" href="@Html.IndexUrl(Request, "sort", "date", true)">@Resources.Resource.NewFirst</a>
                         </li>
                         <li>
                             <a id="sortTitle" name="sorting" href="@Html.IndexUrl(Request, "sort", "title", false)">@Resources.Resource.TitleAZ</a>
@@ -39,7 +39,7 @@
                             <a id="sortDescription" name="sorting" href="@Html.IndexUrl(Request, "sort", "description", false)">@Resources.Resource.DescriptionAZ</a>
                         </li>
                         <li>
-                            <a id="sortDateReverse" name="sorting" href="@Html.IndexUrl(Request, "sort", "date", true)">@Resources.Resource.OldFirst</a>
+                            <a id="sortDateReverse" name="sorting" href="@Html.IndexUrl(Request, "sort", "date", false)">@Resources.Resource.OldFirst</a>
                         </li>
                         <li>
                             <a id="sortTitleReverse" name="sorting" href="@Html.IndexUrl(Request, "sort", "title", true)">@Resources.Resource.TitleZA</a>

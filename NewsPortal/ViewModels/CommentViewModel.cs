@@ -19,6 +19,7 @@ namespace NewsPortal.ViewModels
 
         [Required]
         [MaxLength(5000)]
+        [DataType(DataType.MultilineText)]
         public string Text { get; set; }
 
         [DataType(DataType.Date)]

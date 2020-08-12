@@ -49,9 +49,9 @@ namespace NewsPortal.DAL.Xml.Repositories
             return News;
         }
 
-        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter)
+        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, bool>> search)
         {
-            return News.AsQueryable().Where(filter);
+            return News.AsQueryable().Where(filter).Where(search);
         }
 
         public void Add(NewsItem newsItem)

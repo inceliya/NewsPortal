@@ -35,10 +35,9 @@ namespace NewsPortal.BLL.Services
 
         public List<NewsItem> GetAll(string filter = "all", string sort = "date", string search = "", bool reverse = true)
         {
-            var news = NewsRepository.GetAllByFilter(Filter(filter)).ToList();
+            var news = NewsRepository.GetAllByFilter(Filter(filter), Search(search)).ToList();
 
             Sort(sort, ref news);
-            Search(search, ref news);
 
             if (reverse)
                 news.Reverse();
@@ -78,9 +77,17 @@ namespace NewsPortal.BLL.Services
                     sortParam = n => n.PublicationDate;
                     break;
             }
-            news= news.OrderBy(sortParam).ToList();
-            
+            news = news.OrderBy(sortParam).ToList();
         }
+
+        private Expression<Func<NewsItem, bool>> Search(string search)
+        {
+            if (!string.IsNullOrEmpty(search))
+                return n => n.Title.ToLower().Contains(search.ToLower()) || GetText(n.Description.ToLower()).Contains(search.ToLower());
+            else
+                return n => n.Title != "";
+        }
+
         private string GetText(string text)
         {
             Regex r = new Regex(@"<[^>]*>");
@@ -92,12 +99,6 @@ namespace NewsPortal.BLL.Services
 
             }
             return text;
-        }
-
-        private void Search(string search, ref List<NewsItem> news)
-        {
-            if (!string.IsNullOrEmpty(search))
-                news = news.Where(n => n.Title.ToLower().Contains(search.ToLower()) || GetText(n.Description.ToLower()).Contains(search.ToLower())).ToList();
         }
 
         public void Add(NewsItem newsItem)

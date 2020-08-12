@@ -12,11 +12,11 @@ namespace NewsPortal.DAL.Repositories
 {
     public class NewsRepository : Repository<NewsItem>, INewsRepository
     {
-        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter)
+        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, bool>> search)
         {
             using (ISession session = Hibernate.HibernateHelper.OpenSession())
             {
-                var queryResult = session.QueryOver<NewsItem>().Where(filter);
+                var queryResult = session.QueryOver<NewsItem>().Where(filter).Where(search);
                 return queryResult.List();
             }
         }

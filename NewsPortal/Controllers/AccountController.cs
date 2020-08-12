@@ -3,6 +3,7 @@ using NewsPortal.BLL.Services;
 using NewsPortal.BLL.UnitOfWork;
 using NewsPortal.DAL.Repositories;
 using NewsPortal.ExceptionLogger;
+using NewsPortal.Filters;
 using NewsPortal.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,9 @@ using System.Web.Security;
 namespace NewsPortal.Controllers
 {
     [ExceptionLogger]
+    [Culture]
     public class AccountController : Controller
-    { 
+    {
 
         [HttpGet]
         public ActionResult Login()
@@ -61,6 +63,16 @@ namespace NewsPortal.Controllers
                 sOutput.Append(arrInput[i].ToString("X2"));
             }
             return sOutput.ToString();
+        }
+
+        public ActionResult ChangeCulture(string language)
+        {
+            List<string> cultures = new List<string>() { "uk", "en", "ru" };
+            if (!cultures.Contains(language))
+            {
+                language = "en";
+            }
+            return RedirectToAction("Login", new { language });
         }
     }
 }
