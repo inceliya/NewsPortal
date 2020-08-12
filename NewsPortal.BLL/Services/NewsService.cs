@@ -114,8 +114,8 @@ namespace NewsPortal.BLL.Services
         {
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
-                NewsRepository.Update(newsItem);
-                unitOfWork.Commit();
+                    NewsRepository.Update(newsItem);
+                    unitOfWork.Commit();
             }
         }
 

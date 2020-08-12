@@ -40,7 +40,14 @@ namespace NewsPortal.DAL.Repositories
 
         public void Update(T item)
         {
-            Session.Update(item);
+            try
+            {
+                Session.Update(item);
+            }
+            catch(Exception e)
+            {
+                Session.Merge(item);
+            }
         }
 
         public void Delete(int id)
