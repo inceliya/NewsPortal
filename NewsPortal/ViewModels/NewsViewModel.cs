@@ -18,7 +18,6 @@ namespace NewsPortal.ViewModels
         [StringLength(256)]
         public string Title { get; set; }
 
-        //[RegularExpression(@"[^<[^>]*>]", ErrorMessage = "Error text")]
         [AllowHtml]
         [Required(ErrorMessageResourceType = typeof(Resources.Resource),
             ErrorMessageResourceName = "DescriptionRequired")]

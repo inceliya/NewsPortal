@@ -151,7 +151,6 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\RPRP\NewsPortal\NewsPortal
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\RPRP\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\RPRP\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\RPRP\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
-D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\hibernate.cfg.xml
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.pdb
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.dll

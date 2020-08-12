@@ -1,9 +1,7 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
-    console.log(5);
     let url = loader.dataset.request.substring(0, loader.dataset.request.length - 1);
     if (loader.dataset.view.toString().toLowerCase() == "index") {
         let sort = loader.dataset.sort;
-        //let reverseBool = loader.dataset.reverse == "true";
         let reverseBool = loader.dataset.reverse;
         if (reverseBool == "False")
             reverseBool = false;

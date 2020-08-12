@@ -1,8 +1,5 @@
-﻿console.log('jjj');
-window.onload = function () {
-    console.log('jjj');
+﻿window.onload = function () {
     document.querySelectorAll(".dateUtc").forEach(i => {
-        console.log('jjj');
         const json = JSON.parse(i.innerHTML);
         let date = new Date(json.year, json.month, json.day, json.hour, json.minute);
         date.setTime(date.getTime() - new Date().getTimezoneOffset() * 60 * 1000);

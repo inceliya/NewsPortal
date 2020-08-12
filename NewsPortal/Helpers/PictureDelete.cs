@@ -14,7 +14,6 @@ namespace NewsPortal.Helpers
         {
             var newsItem = newsService.Get(id);
             if (newsItem == null) return;
-           // var newsItemViewModel = new 
             var directoryToSave = server.MapPath(url.Content("~/Pictures"));
             if (!string.IsNullOrEmpty(newsItem.Image))
             {

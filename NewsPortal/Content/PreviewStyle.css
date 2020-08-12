@@ -81,12 +81,13 @@
         width: 330px;
         height: auto;
     }
-    .news-item > div:nth-child(4) {
-        text-align: justify;
-        text-indent: 0em;
-        margin-top: 10px;
-        padding-left: 0;
-    }
+        .news-item > div:nth-child(4) {
+            text-align: justify;
+            text-indent: 0em;
+            margin-top: 10px;
+            padding-left: 0;
+            max-width: 330px;
+        }
 
     .news-item > div:nth-child(3) {
         text-align: left;
