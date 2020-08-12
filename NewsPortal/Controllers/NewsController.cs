@@ -18,6 +18,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
@@ -73,12 +74,28 @@ namespace NewsPortal.Controllers
             return View(newsItemViewModel);
         }
 
-        public ActionResult ChangeCulture(string language)
+        public ActionResult ChangeCulture(string language, string returnUrl)
         {
             List<string> cultures = new List<string>() { "uk", "en", "ru" };
             if (!cultures.Contains(language))
             {
                 language = "en";
+            }
+            if (returnUrl != null && returnUrl.Length > 1)
+            {
+                string newUrl;
+                Regex rg = new Regex("uk|en|ru");
+                Match match = rg.Match(returnUrl);
+                if(!string.IsNullOrEmpty(match.Value))
+                {
+                    newUrl = returnUrl.Replace(match.Value, language);
+                    
+                }
+                else
+                {
+                    newUrl = $"/{language}" + returnUrl;
+                }
+                return Redirect(newUrl);
             }
             return RedirectToAction("", new { language });
         }

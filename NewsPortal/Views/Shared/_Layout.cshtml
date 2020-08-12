@@ -15,13 +15,13 @@
         <div class="container">
                 @Html.ActionLink("NewsPortal", "Index", "News", new { area = "" }, new { @class = "navbar-brand" })
             <div class="flag pull-right">
-                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "uk" })">
+                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "uk", returnUrl = Request.Url.PathAndQuery })">
                     <img width="30" src="~/Resources/Icons/iconfinder_Flag_of_Ukraine_96351.png" alt="uk" />
                 </a>
-                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "en" })">
+                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "en", returnUrl = Request.Url.PathAndQuery })">
                     <img width="30" src="~/Resources/Icons/iconfinder_Flag_of_United_States_96220.png" alt="en" />
                 </a>
-                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "ru" })">
+                <a href="@Url.Action("ChangeCulture", Request.QueryString["controller"], new { language = "ru", returnUrl = Request.Url.PathAndQuery })">
                     <img width="30" src="~/Resources/Icons/iconfinder_Flag_of_Russia_96241.png" alt="ru" />
                 </a>
             </div>

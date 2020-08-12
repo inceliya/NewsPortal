@@ -20,12 +20,14 @@ namespace NewsPortal
                 case "xml":
                     container.RegisterType<INewsRepository, DAL.Xml.Repositories.NewsRepository>();
                     container.RegisterType<ICommentRepository, DAL.Xml.Repositories.CommentRepository>();
+                    container.RegisterType<ILoginRepository, DAL.Xml.Repositories.LoginRepository>();
                     container.RegisterType<IUnitOfWorkFactory, DAL.Xml.UnitOfWork.UnitOfWorkFactory>();
                     break;
                 case "db":
                 default:
                     container.RegisterType<INewsRepository, DAL.Repositories.NewsRepository>();
                     container.RegisterType<ICommentRepository, DAL.Repositories.CommentRepository>();
+                    container.RegisterType<ILoginRepository, DAL.Repositories.LoginRepository>();
                     container.RegisterType<IUnitOfWorkFactory, DAL.UnitOfWork.UnitOfWorkFactory>();
                     break;
             }

@@ -1,4 +1,5 @@
 ﻿using NewsPortal.BLL.Entities;
+using NewsPortal.BLL.Repositories;
 using NewsPortal.BLL.Services;
 using NewsPortal.BLL.UnitOfWork;
 using NewsPortal.DAL.Repositories;
@@ -20,6 +21,12 @@ namespace NewsPortal.Controllers
     [Culture]
     public class AccountController : Controller
     {
+        private LoginService LoginService;
+
+        public AccountController(IUnitOfWorkFactory unitOfWorkFactory, ILoginRepository loginRepository)
+        {
+            LoginService = new LoginService(unitOfWorkFactory, loginRepository);
+        }
 
         [HttpGet]
         public ActionResult Login()
@@ -35,8 +42,7 @@ namespace NewsPortal.Controllers
                 byte[] passwordBytes = ASCIIEncoding.ASCII.GetBytes(model.Password);
                 byte[] hashBytes = new MD5CryptoServiceProvider().ComputeHash(passwordBytes);
                 string hash = ByteArrayToString(hashBytes);
-                LoginRepository lr = new LoginRepository();
-                var login = lr.GetUserByLogin(model.UserName);
+                var login = LoginService.GetUserByLogin(model.UserName);
                 if (login != null && hash == login.Password)
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, false);

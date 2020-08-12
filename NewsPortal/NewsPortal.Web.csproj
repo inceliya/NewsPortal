@@ -187,6 +187,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <Content Include="App_Data\XmlData\CommentData.xml" />
+    <Content Include="App_Data\XmlData\LoginData.xml" />
     <Content Include="App_Data\XmlData\NewsData.xml" />
     <Content Include="HibernateMapping\Login.hbm.xml" />
     <Content Include="Resources\Icons\eye-slash_icon-icons.com_70154.png" />
