@@ -53,16 +53,27 @@ namespace NewsPortal.CL.Services
         {
             CommentServiceBLL.Add(comment);
             CacheRepository.Add(comment, $"Comment-{comment.Id}");
+            CacheRepository.Delete($"Comments-{comment.NewsId}");
         }
 
         public void Update(Comment comment)
         {
             CommentServiceBLL.Update(comment);
             CacheRepository.Update(comment, $"Comment-{comment.Id}");
+            CacheRepository.Delete($"Comments-{comment.NewsId}");
         }
 
         public void Delete(int id)
         {
+            var comment = CacheRepository.Get($"Comment-{id}");
+
+            if (comment == null)
+            {
+                comment = CommentServiceBLL.Get(id);
+            }
+
+            CacheRepository.Delete($"Comments-{comment.NewsId}");
+
             CommentServiceBLL.Delete(id);
             CacheRepository.Delete($"Comment-{id}");
         }

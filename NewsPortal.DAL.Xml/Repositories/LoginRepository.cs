@@ -13,7 +13,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 {
     public class LoginRepository : ILoginRepository
     {
-        private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["LoginXmlFilePath"]);
+        private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["TempXmlFilePath"]);
         protected List<Login> Users;
         protected XDocument ItemsData;
 
@@ -21,9 +21,9 @@ namespace NewsPortal.DAL.Xml.Repositories
         {
             Users = new List<Login>();
             ItemsData = XDocument.Load(FilePath);
-            if (!string.IsNullOrEmpty(ItemsData.Root.Value))
+            if (!string.IsNullOrEmpty(ItemsData.Root.Element("Login").Value))
             {
-                var users = from t in ItemsData.Descendants("item")
+                var users = from t in ItemsData.Root.Element("Login").Descendants("item")
                            select new Login()
                            {
                                Id = (int)t.Element("id"),
@@ -54,15 +54,15 @@ namespace NewsPortal.DAL.Xml.Repositories
         {
             if (!string.IsNullOrEmpty(ItemsData.Root.Value))
             {
-                login.Id = (int)(ItemsData.Root.Element("max_id")) + 1;
-                ItemsData.Root.SetElementValue("max_id", login.Id);
+                login.Id = (int)(ItemsData.Root.Element("Login").Element("max_id")) + 1;
+                ItemsData.Root.Element("Login").SetElementValue("max_id", login.Id);
             }
             else
             {
                 login.Id = 0;
             }
 
-            ItemsData.Root.Add(new XElement("item",
+            ItemsData.Root.Element("Login").Add(new XElement("item",
                 new XElement("id", login.Id),
                 new XElement("username", login.UserName),
                 new XElement("password", login.Password)));
@@ -72,7 +72,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Update(Login login)
         {
-            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == login.Id).Single();
+            XElement node = ItemsData.Root.Element("Login").Elements("item").Where(i => (int)i.Element("id") == login.Id).Single();
 
             node.SetElementValue("username", login.UserName);
             node.SetElementValue("password", login.Password);
@@ -81,7 +81,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Delete(int id)
         {
-            ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == id).Remove();
+            ItemsData.Root.Element("Login").Elements("item").Where(i => (int)i.Element("id") == id).Remove();
 
             ItemsData.Save(FilePath);
         }

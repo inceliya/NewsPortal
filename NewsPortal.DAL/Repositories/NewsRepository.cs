@@ -14,11 +14,8 @@ namespace NewsPortal.DAL.Repositories
     {
         public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, bool>> search)
         {
-            using (ISession session = Hibernate.HibernateHelper.OpenSession())
-            {
-                var queryResult = session.QueryOver<NewsItem>().Where(filter).Where(search);
-                return queryResult.List();
-            }
+            var queryResult = Session.QueryOver<NewsItem>().Where(filter).Where(search);
+            return queryResult.List();
         }
     }
 }

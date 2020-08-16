@@ -15,7 +15,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 {
     public class NewsRepository : INewsRepository
     {
-        private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["NewsXmlFilePath"]);
+        private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["TempXmlFilePath"]);
         protected List<NewsItem> News;
         protected XDocument ItemsData;
 
@@ -23,9 +23,9 @@ namespace NewsPortal.DAL.Xml.Repositories
         {
             News = new List<NewsItem>();
             ItemsData = XDocument.Load(FilePath);
-            if (!string.IsNullOrEmpty(ItemsData.Root.Value))
+            if (!string.IsNullOrEmpty(ItemsData.Root.Element("NewsItem").Value))
             {
-                var news = from t in ItemsData.Descendants("item")
+                var news = from t in ItemsData.Root.Element("NewsItem").Descendants("item")
                            select new NewsItem()
                            {
                                Id = (int)t.Element("id"),
@@ -56,17 +56,17 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Add(NewsItem newsItem)
         {
-            if (!string.IsNullOrEmpty(ItemsData.Root.Value))
+            if (!string.IsNullOrEmpty(ItemsData.Root.Element("NewsItem").Value))
             {
-                newsItem.Id = (int)(ItemsData.Root.Element("max_id")) + 1;
-                ItemsData.Root.SetElementValue("max_id", newsItem.Id);
+                newsItem.Id = (int)(ItemsData.Root.Element("NewsItem").Element("max_id")) + 1;
+                ItemsData.Root.Element("NewsItem").SetElementValue("max_id", newsItem.Id);
             }
             else
             {
                 newsItem.Id = 0;
             }
 
-            ItemsData.Root.Add(new XElement("item",
+            ItemsData.Root.Element("NewsItem").Add(new XElement("item",
                 new XElement("id", newsItem.Id),
                 new XElement("title", newsItem.Title),
                 new XElement("description", newsItem.Description),
@@ -79,7 +79,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Update(NewsItem newsItem)
         {
-            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == newsItem.Id).Single();
+            XElement node = ItemsData.Root.Element("NewsItem").Elements("item").Where(i => (int)i.Element("id") == newsItem.Id).Single();
 
             node.SetElementValue("title", newsItem.Title);
             node.SetElementValue("description", newsItem.Description);
@@ -91,7 +91,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Delete(int id)
         {
-            ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == id).Remove();
+            ItemsData.Root.Element("NewsItem").Elements("item").Where(i => (int)i.Element("id") == id).Remove();
 
             ItemsData.Save(FilePath);
         }

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <NewsItem>
+    <max_id>7</max_id>
+    <item>
+      <id>6</id>
+      <title>Вітаємо!</title>
+      <description>
+        &lt;p&gt;Картинки видалено&lt;/p&gt;
+      </description>
+      <image>/Pictures/9e5b69ab-3381-4206-9353-bf69cd4f3a43kartinki-na-avatarku-dlya-parnej-i-muzhchin-60-650x549.jpg</image>
+      <publication_date>2020-08-10T13:22:00</publication_date>
+      <visibility>true</visibility>
+    </item>
+    <item>
+      <id>7</id>
+      <title>Заголовок (Н)</title>
+      <description>&lt;p&gt;Описание (Н)&lt;/p&gt;
+</description>
+      <image>/Pictures/b62dfcad-a65e-43dd-8902-300ea412b24e29513027_102183730630635_2939423376211936052_n.jpg</image>
+      <publication_date>2020-08-16T12:20:00</publication_date>
+      <visibility>true</visibility>
+    </item>
+  </NewsItem>
+  <Comment>
+    <max_id>7</max_id>
+    <item>
+      <id>0</id>
+      <news_id>6</news_id>
+      <author>Пользователь</author>
+      <text>Сова или филин?</text>
+      <creation_date>2020-08-16T12:47:14.3456975Z</creation_date>
+    </item>
+  </Comment>
+  <Login>
+    <max_id>0</max_id>
+    <item>
+      <id>0</id>
+      <username>admin</username>
+      <password>81DC9BDB52D04DC20036DBD8313ED055</password>
+    </item>
+  </Login>
+</Items>

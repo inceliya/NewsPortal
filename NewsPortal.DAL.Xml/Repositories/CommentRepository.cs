@@ -14,7 +14,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
-        private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["CommentXmlFilePath"]);
+        private string FilePath = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["TempXmlFilePath"]);
 
         protected List<Comment> Comments;
         protected XDocument ItemsData;
@@ -24,9 +24,9 @@ namespace NewsPortal.DAL.Xml.Repositories
             Comments = new List<Comment>();
             ItemsData = XDocument.Load(FilePath);
 
-            if (!string.IsNullOrEmpty(ItemsData.Root.Value))
+            if (!string.IsNullOrEmpty(ItemsData.Root.Element("Comment").Value))
             {
-                var comments = from t in ItemsData.Descendants("item")
+                var comments = from t in ItemsData.Root.Element("Comment").Descendants("item")
                                select new Comment()
                                {
                                    Id = (int)t.Element("id"),
@@ -57,16 +57,16 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Add(Comment comment)
         {
-            if (!string.IsNullOrEmpty(ItemsData.Root.Value))
+            if (!string.IsNullOrEmpty(ItemsData.Root.Element("Comment").Value))
             {
-                comment.Id = (int)(ItemsData.Root.Element("max_id")) + 1;
-                ItemsData.Root.SetElementValue("max_id", comment.Id);
+                comment.Id = (int)(ItemsData.Root.Element("Comment").Element("max_id")) + 1;
+                ItemsData.Root.Element("Comment").SetElementValue("max_id", comment.Id);
             }
             else
             {
                 comment.Id = 0;
             }
-            ItemsData.Root.Add(new XElement("item",
+            ItemsData.Root.Element("Comment").Add(new XElement("item",
                 new XElement("id", comment.Id),
                 new XElement("news_id", comment.NewsId),
                 new XElement("author", comment.Author),
@@ -78,7 +78,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Update(Comment comment)
         {
-            XElement node = ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == comment.Id).Single();
+            XElement node = ItemsData.Root.Element("Comment").Elements("item").Where(i => (int)i.Element("id") == comment.Id).Single();
 
             node.SetElementValue("news_id", comment.NewsId);
             node.SetElementValue("author", comment.Author);
@@ -89,7 +89,7 @@ namespace NewsPortal.DAL.Xml.Repositories
 
         public void Delete(int id)
         {
-            ItemsData.Root.Elements("item").Where(i => (int)i.Element("id") == id).Remove();
+            ItemsData.Root.Element("Comment").Elements("item").Where(i => (int)i.Element("id") == id).Remove();
 
             ItemsData.Save(FilePath);
         }
