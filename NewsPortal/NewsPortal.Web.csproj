@@ -783,6 +783,10 @@
       <Project>{f6248031-e790-4a25-a2bd-05370a9ae140}</Project>
       <Name>NewsPortal.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NewsPortal.CL\NewsPortal.CL.csproj">
+      <Project>{1496824b-79ee-467f-8b7c-1e9ad9fdcebe}</Project>
+      <Name>NewsPortal.CL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NewsPortal.DAL.Xml\NewsPortal.DAL.Xml.csproj">
       <Project>{581959bb-f11d-48b4-9842-5727304c5e57}</Project>
       <Name>NewsPortal.DAL.Xml</Name>

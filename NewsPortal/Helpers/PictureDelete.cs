@@ -1,4 +1,4 @@
-﻿using NewsPortal.BLL.Services;
+﻿using NewsPortal.CL.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;

@@ -170,7 +170,6 @@ D:\апап\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CoreCompil
 D:\апап\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
 D:\апап\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
 D:\апап\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
-C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\hibernate.cfg.xml
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.pdb
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\Antlr3.Runtime.dll

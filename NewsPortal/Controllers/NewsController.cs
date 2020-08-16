@@ -1,6 +1,6 @@
 ﻿using NewsPortal.BLL.Entities;
 using NewsPortal.BLL.Repositories;
-using NewsPortal.BLL.Services;
+using NewsPortal.CL.Services;
 using NewsPortal.BLL.UnitOfWork;
 using NewsPortal.ExceptionLogger;
 using NewsPortal.Filters;

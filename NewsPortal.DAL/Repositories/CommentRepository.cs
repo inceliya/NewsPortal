@@ -13,11 +13,8 @@ namespace NewsPortal.DAL.Repositories
     {
         public IEnumerable<Comment> GetByNewsId(int id)
         {
-            using (ISession session = Hibernate.HibernateHelper.OpenSession())
-            {
-                var queryResult = session.QueryOver<Comment>().Where(n => n.NewsId == id);
-                return queryResult.List();
-            }
+            var queryResult = Session.QueryOver<Comment>().Where(n => n.NewsId == id);
+            return queryResult.List();
         }
     }
 }

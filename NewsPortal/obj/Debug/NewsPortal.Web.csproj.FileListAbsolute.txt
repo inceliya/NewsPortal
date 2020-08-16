@@ -1701,3 +1701,5 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal\obj\
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.Web.csproj.CopyComplete
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.CL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.CL.pdb

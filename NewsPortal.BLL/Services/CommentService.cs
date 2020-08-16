@@ -22,14 +22,22 @@ namespace NewsPortal.BLL.Services
 
         public Comment Get(int id)
         {
-            var comment = CommentRepository.Get(id);
+            Comment comment = null;
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                comment = CommentRepository.Get(id);
+            }
             return comment;
         }
 
         public List<Comment> GetByNewsId(int id)
         {
-            var comments = CommentRepository.GetByNewsId(id);
-            return comments.ToList();
+            List<Comment> comments = null;
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                comments = CommentRepository.GetByNewsId(id).ToList();
+            }
+            return comments;
         }
 
         public List<Comment> GetAll()

@@ -8,7 +8,7 @@ using PagedList;
 using NewsPortal.ExceptionLogger;
 using NewsPortal.Filters;
 using System.IO;
-using NewsPortal.BLL.Services;
+using NewsPortal.CL.Services;
 using NewsPortal.BLL.Entities;
 using System.Configuration;
 using NewsPortal.BLL.UnitOfWork;
@@ -181,8 +181,8 @@ namespace NewsPortal.Controllers
         [ExceptionLogger]
         public ActionResult DeleteConfirmed(int id)
         {
-            NewsService.Delete(id);
             Helpers.PictureDelete.Delete(Server, Url, NewsService, CommentService, id);
+            NewsService.Delete(id);
             return RedirectToAction("Index");
         }
 

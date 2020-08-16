@@ -1,0 +1,9 @@
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\bin\Debug\NewsPortal.CL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\bin\Debug\NewsPortal.CL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\bin\Debug\NewsPortal.BLL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\bin\Debug\NewsPortal.BLL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.csprojAssemblyReference.cache
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.csproj.CoreCompileInputs.cache
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.csproj.CopyComplete
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.pdb

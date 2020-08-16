@@ -90,8 +90,8 @@ namespace NewsPortal.BLL.Services
 
         private string GetText(string text)
         {
-            Regex r = new Regex(@"<[^>]*>");
-            MatchCollection matches = r.Matches(text);
+            var r = new Regex(@"<[^>]*>");
+            var matches = r.Matches(text);
             for (int i = 0; i < matches.Count; i++)
             {
                 int index = text.IndexOf(matches[i].Value.ToString());
@@ -114,8 +114,8 @@ namespace NewsPortal.BLL.Services
         {
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
-                    NewsRepository.Update(newsItem);
-                    unitOfWork.Commit();
+                NewsRepository.Update(newsItem);
+                unitOfWork.Commit();
             }
         }
 
@@ -123,7 +123,6 @@ namespace NewsPortal.BLL.Services
         {
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
-
                 NewsRepository.Delete(id);
                 unitOfWork.Commit();
             }
