@@ -35,12 +35,16 @@ namespace NewsPortal.BLL.Services
 
         public List<NewsItem> GetAll(string filter = "all", string sort = "date", string search = "", bool reverse = true)
         {
-            var news = NewsRepository.GetAllByFilter(Filter(filter), Search(search)).ToList();
+            List<NewsItem> news = null;
+            using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
+            {
+                news = NewsRepository.GetAllByFilter(Filter(filter), Search(search)).ToList();
 
-            Sort(sort, ref news);
+                Sort(sort, ref news);
 
-            if (reverse)
-                news.Reverse();
+                if (reverse)
+                    news.Reverse();
+            }
 
             return news;
         }

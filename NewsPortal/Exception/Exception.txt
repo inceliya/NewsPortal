@@ -3686,3 +3686,33 @@ AddComment
 Comment
 DeleteComment
 16.08.2020 16:17:16
+
+No session bound to the current context
+   at NHibernate.Context.CurrentSessionContext.CurrentSession()
+   at NHibernate.Impl.SessionFactoryImpl.GetCurrentSession()
+   at NewsPortal.Hibernate.HibernateHelper.GetSession() in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\NHibernate\HibernateHelper.cs:line 42
+   at NewsPortal.DAL.Repositories.Repository`1.get_Session() in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\Repositories\Repository.cs:line 20
+   at NewsPortal.DAL.Repositories.NewsRepository.GetAllByFilter(Expression`1 filter, Expression`1 search) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\Repositories\NewsRepository.cs:line 17
+   at NewsPortal.BLL.Services.NewsService.GetAll(String filter, String sort, String search, Boolean reverse) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\Services\NewsService.cs:line 38
+   at NewsPortal.CL.Services.NewsService.GetAll(String filter, String sort, String search, Boolean reverse) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\Services\NewsService.cs:line 37
+   at NewsPortal.Controllers.NewsController.Index(PanelViewModel panel) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal\Controllers\NewsController.cs:line 46
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+News
+Index
+8/17/2020 9:37:48 AM
