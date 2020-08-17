@@ -761,6 +761,7 @@
     <Content Include="Views\Shared\Error404.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\Lucene\" />
     <Folder Include="Exception\" />
     <Folder Include="Pictures\" />
   </ItemGroup>

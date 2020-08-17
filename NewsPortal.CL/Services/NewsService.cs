@@ -34,6 +34,7 @@ namespace NewsPortal.CL.Services
 
         public List<NewsItem> GetAll(string filter, string sort, string search, bool reverse)
         {
+
             var news = NewsServiceBLL.GetAll(filter, sort, search, reverse);
             return news;
         }

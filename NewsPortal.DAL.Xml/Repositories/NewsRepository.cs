@@ -1,5 +1,6 @@
 ﻿using NewsPortal.BLL.Entities;
 using NewsPortal.BLL.Repositories;
+using NewsPortal.LL;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -49,9 +50,10 @@ namespace NewsPortal.DAL.Xml.Repositories
             return News;
         }
 
-        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, bool>> search)
+        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, string search)
         {
-            return News.AsQueryable().Where(filter).Where(search);
+            if (!string.IsNullOrEmpty(search.Trim())) return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter);
+            return  News.AsQueryable().Where(filter);
         }
 
         public void Add(NewsItem newsItem)
@@ -75,6 +77,7 @@ namespace NewsPortal.DAL.Xml.Repositories
                 new XElement("visibility", newsItem.Visibility)));
 
             ItemsData.Save(FilePath);
+            LuceneHelper.GetRepository<NewsItem>().Save(newsItem);
         }
 
         public void Update(NewsItem newsItem)
@@ -87,6 +90,7 @@ namespace NewsPortal.DAL.Xml.Repositories
             node.SetElementValue("publication_date", newsItem.PublicationDate);
             node.SetElementValue("visibility", newsItem.Visibility);
             ItemsData.Save(FilePath);
+            LuceneHelper.GetRepository<NewsItem>().Update(newsItem);
         }
 
         public void Delete(int id)
@@ -94,6 +98,7 @@ namespace NewsPortal.DAL.Xml.Repositories
             ItemsData.Root.Element("NewsItem").Elements("item").Where(i => (int)i.Element("id") == id).Remove();
 
             ItemsData.Save(FilePath);
+            LuceneHelper.GetRepository<NewsItem>().Delete(id);
         }
     }
 }

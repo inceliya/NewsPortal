@@ -33,24 +33,24 @@ namespace NewsPortal.DAL.Repositories
             return queryResult.List();
         }
 
-        public void Add(T item)
+        public virtual void Add(T item)
         {
             Session.Save(item);
         }
 
-        public void Update(T item)
+        public virtual void Update(T item)
         {
             try
             {
                 Session.Update(item);
             }
-            catch(Exception e)
+            catch(Exception)
             {
                 Session.Merge(item);
             }
         }
 
-        public void Delete(int id)
+        public virtual void Delete(int id)
         {
             var queryResult = Session.Get<T>(id);
             if (queryResult != null)

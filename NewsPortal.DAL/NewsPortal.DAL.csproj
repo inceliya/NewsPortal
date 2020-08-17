@@ -78,6 +78,10 @@
       <Project>{f6248031-e790-4a25-a2bd-05370a9ae140}</Project>
       <Name>NewsPortal.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NewsPortal.LL\NewsPortal.LL.csproj">
+      <Project>{1b86a29b-d543-446d-a720-22f6d8333037}</Project>
+      <Name>NewsPortal.LL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

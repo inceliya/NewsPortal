@@ -10,6 +10,6 @@ namespace NewsPortal.BLL.Repositories
 {
     public interface INewsRepository : IRepository<NewsItem>
     {
-        IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, bool>> search);
+        IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, string search);
     }
 }

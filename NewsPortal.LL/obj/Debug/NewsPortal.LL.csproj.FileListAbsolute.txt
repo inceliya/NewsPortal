@@ -1,0 +1,13 @@
+D:\апап\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.LL.dll
+D:\апап\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.LL.pdb
+D:\апап\NewsPortal\NewsPortal.LL\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\апап\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.dll
+D:\апап\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.BLL.dll
+D:\апап\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.BLL.pdb
+D:\апап\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.pdb
+D:\апап\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.xml
+D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csprojAssemblyReference.cache
+D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csproj.CoreCompileInputs.cache
+D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csproj.CopyComplete
+D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.dll
+D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.pdb

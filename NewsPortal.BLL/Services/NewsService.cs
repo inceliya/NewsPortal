@@ -38,7 +38,7 @@ namespace NewsPortal.BLL.Services
             List<NewsItem> news = null;
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
-                news = NewsRepository.GetAllByFilter(Filter(filter), Search(search)).ToList();
+                news = NewsRepository.GetAllByFilter(Filter(filter), search).ToList();
 
                 Sort(sort, ref news);
 

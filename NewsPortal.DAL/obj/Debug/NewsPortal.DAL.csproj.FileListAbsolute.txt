@@ -292,3 +292,8 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal.DAL\
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
+D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.LL.dll
+D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.dll
+D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.LL.pdb
+D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.pdb
+D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.xml

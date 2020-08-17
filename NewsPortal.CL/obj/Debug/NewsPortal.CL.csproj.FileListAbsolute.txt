@@ -7,3 +7,12 @@ C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.csp
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.csproj.CopyComplete
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.pdb
+D:\апап\NewsPortal\NewsPortal.CL\bin\Debug\NewsPortal.CL.dll
+D:\апап\NewsPortal\NewsPortal.CL\bin\Debug\NewsPortal.CL.pdb
+D:\апап\NewsPortal\NewsPortal.CL\bin\Debug\NewsPortal.BLL.dll
+D:\апап\NewsPortal\NewsPortal.CL\bin\Debug\NewsPortal.BLL.pdb
+D:\апап\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.csprojAssemblyReference.cache
+D:\апап\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.csproj.CoreCompileInputs.cache
+D:\апап\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.csproj.CopyComplete
+D:\апап\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.dll
+D:\апап\NewsPortal\NewsPortal.CL\obj\Debug\NewsPortal.CL.pdb

@@ -1703,3 +1703,10 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal\obj\
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\NewsPortal\NewsPortal\obj\Debug\NewsPortal.pdb
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.CL.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.CL.pdb
+D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.CL.dll
+D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.CL.pdb
+D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.LL.dll
+D:\апап\NewsPortal\NewsPortal\bin\Lucene.Net.dll
+D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.LL.pdb
+D:\апап\NewsPortal\NewsPortal\bin\Lucene.Net.pdb
+D:\апап\NewsPortal\NewsPortal\bin\Lucene.Net.xml
