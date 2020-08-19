@@ -66,6 +66,7 @@ namespace NewsPortal.LL.Repositories
             {
                 using (var searcher = new IndexSearcher(FSDirectory, false))
                 {
+
                     
                     QueryParser parser = new MultiFieldQueryParser(Lucene.Net.Util.Version.LUCENE_30, new string[] { "Title", "Description" }, analyzer);
                     Query query;
