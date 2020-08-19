@@ -33,6 +33,7 @@ namespace NewsPortal.LL.Repositories
                     var termQuery = new TermQuery(new Term("Id", item.Id.ToString()));
                     writer.DeleteDocuments(termQuery);
                     writer.AddDocument(ToDocument(item));
+                    writer.Optimize();
                 }
             }
         }
@@ -45,6 +46,7 @@ namespace NewsPortal.LL.Repositories
                     var termQuery = new TermQuery(new Term("Id", item.Id.ToString()));
                     writer.DeleteDocuments(termQuery);
                     writer.AddDocument(ToDocument(item));
+                    writer.Optimize();
                 }
             }
         }
@@ -56,6 +58,7 @@ namespace NewsPortal.LL.Repositories
                     {
                         var termQuery = new TermQuery(new Term("Id", id.ToString()));
                         writer.DeleteDocuments(termQuery);
+                        writer.Optimize();
                     }
                 }
         }
@@ -65,9 +68,7 @@ namespace NewsPortal.LL.Repositories
             using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
             {
                 using (var searcher = new IndexSearcher(FSDirectory, false))
-                {
-
-                    
+                {                    
                     QueryParser parser = new MultiFieldQueryParser(Lucene.Net.Util.Version.LUCENE_30, new string[] { "Title", "Description" }, analyzer);
                     Query query;
                     try
@@ -114,6 +115,18 @@ namespace NewsPortal.LL.Repositories
             document.Add(new Field("Visibility", item.Visibility.ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
             return document;
         }
+
+        public void DeleteAll()
+        {
+            using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
+            {
+                using (var writer = new IndexWriter(FSDirectory, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
+                {
+                    writer.DeleteAll();
+                }
+            }
+        }
+
         private FSDirectory fSDirectory;
         private  FSDirectory FSDirectory
         {

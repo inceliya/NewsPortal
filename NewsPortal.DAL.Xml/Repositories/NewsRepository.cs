@@ -38,6 +38,7 @@ namespace NewsPortal.DAL.Xml.Repositories
                            };
                 News.AddRange(news.ToList());
             }
+           
         }
 
         public NewsItem Get(int id)
@@ -99,7 +100,7 @@ namespace NewsPortal.DAL.Xml.Repositories
             node.SetElementValue("publication_date", newsItem.PublicationDate);
             node.SetElementValue("visibility", newsItem.Visibility);
             ItemsData.Save(FilePath);
-            LuceneHelper.GetRepository<NewsItem>().Update(newsItem);
+            LuceneHelper.GetRepository<NewsItem>().Save(newsItem);
         }
 
         public void Delete(int id)
@@ -108,6 +109,14 @@ namespace NewsPortal.DAL.Xml.Repositories
 
             ItemsData.Save(FilePath);
             LuceneHelper.GetRepository<NewsItem>().Delete(id);
+        }
+        public void Refresh(IEnumerable<NewsItem> list)
+        {
+            var lucene = LuceneHelper.GetRepository<NewsItem>();
+            lucene.DeleteAll();
+           // var list = GetAll();
+            foreach (var item in list)
+                lucene.Save(item);
         }
     }
 }

@@ -14,6 +14,7 @@ namespace NewsPortal.LL.Repositories
         void Save(T item);
         void Update(T item);
         void Delete(int id);
+        void DeleteAll();
         T FromDocument(Document document);
         Document ToDocument(T item);
     }

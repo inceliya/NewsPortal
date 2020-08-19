@@ -28,18 +28,26 @@ namespace NewsPortal.DAL.Repositories
         }
         public override void Add(NewsItem item)
         {
-            LuceneHelper.GetRepository<NewsItem>().Save(item);
             base.Add(item);
+            LuceneHelper.GetRepository<NewsItem>().Save(item);
         }
         public override void Update(NewsItem item)
         {
-            LuceneHelper.GetRepository<NewsItem>().Update(item);
             base.Update(item);
+            LuceneHelper.GetRepository<NewsItem>().Save(item);
         }
         public override void Delete(int id)
         {
-            LuceneHelper.GetRepository<NewsItem>().Delete(id);
             base.Delete(id);
+            LuceneHelper.GetRepository<NewsItem>().Delete(id);
+        }
+
+        public void Refresh(IEnumerable<NewsItem> list)
+        {
+              var lucene = LuceneHelper.GetRepository<NewsItem>();
+              lucene.DeleteAll();
+              foreach (var item in list)
+              lucene.Save(item);
         }
     }
 }

@@ -21,6 +21,7 @@ namespace NewsPortal.BLL.Services
         {
             UnitOfWorkFactory = uowf;
             NewsRepository = newsRepository;
+            NewsRepository.Refresh(GetAll());
         }
 
         public NewsItem Get(int id)
@@ -35,6 +36,7 @@ namespace NewsPortal.BLL.Services
 
         public List<NewsItem> GetAll(string filter = "all", string sort = "date", string search = "", bool reverse = true)
         {
+            
             List<NewsItem> news = null;
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
