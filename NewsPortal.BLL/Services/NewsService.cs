@@ -66,10 +66,10 @@ namespace NewsPortal.BLL.Services
             switch (sort)
             {
                 case "title":
-                    sortParam = n => n.Title.ToLower();
+                    sortParam = n => n.Title;
                     break;
                 case "description":
-                    sortParam = n => n.Description.ToLower();
+                    sortParam = n => n.Description;
                     break;
                 case "date":
                 default:

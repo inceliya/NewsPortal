@@ -3716,3 +3716,49 @@ No session bound to the current context
 News
 Index
 8/17/2020 9:37:48 AM
+
+На переменную "n" типа "NewsPortal.BLL.Entities.NewsItem" имеется ссылка из области "", но она не определена
+   at System.Linq.Expressions.Compiler.VariableBinder.Reference(ParameterExpression node, VariableStorageKind storage)
+   at System.Linq.Expressions.Compiler.VariableBinder.VisitParameter(ParameterExpression node)
+   at System.Linq.Expressions.ParameterExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.Compiler.VariableBinder.Visit(Expression node)
+   at System.Linq.Expressions.ExpressionVisitor.VisitMember(MemberExpression node)
+   at System.Linq.Expressions.MemberExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.Compiler.VariableBinder.Visit(Expression node)
+   at System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(MethodCallExpression node)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.Compiler.VariableBinder.Visit(Expression node)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(ReadOnlyCollection`1 nodes)
+   at System.Linq.Expressions.Compiler.VariableBinder.VisitLambda[T](Expression`1 node)
+   at System.Linq.Expressions.Expression`1.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.Compiler.VariableBinder.Visit(Expression node)
+   at System.Linq.Expressions.Compiler.LambdaCompiler.Compile(LambdaExpression lambda, DebugInfoGenerator debugInfoGenerator)
+   at NHibernate.Impl.ExpressionProcessor.FindValue(Expression expression)
+   at NHibernate.Impl.ExpressionProcessor.FindMemberProjection(Expression expression)
+   at NHibernate.Impl.ExpressionProcessor.ProcessOrder(LambdaExpression expression, Func`2 orderStringDelegate, Func`2 orderProjectionDelegate)
+   at NHibernate.Criterion.Lambda.QueryOverOrderBuilderBase`3.AddOrder(Func`2 orderStringDelegate, Func`2 orderProjectionDelegate)
+   at NHibernate.Criterion.Lambda.QueryOverOrderBuilderBase`3.get_Asc()
+   at NewsPortal.DAL.Repositories.NewsRepository.GetAllByFilter(Expression`1 filter, Expression`1 sort, String search, Boolean reverse) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\Repositories\NewsRepository.cs:line 27
+   at NewsPortal.BLL.Services.NewsService.GetAll(String filter, String sort, String search, Boolean reverse) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.BLL\Services\NewsService.cs:line 41
+   at NewsPortal.CL.Services.NewsService.GetAll(String filter, String sort, String search, Boolean reverse) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal.CL\Services\NewsService.cs:line 38
+   at NewsPortal.Controllers.NewsController.Index(PanelViewModel panel) in C:\Users\nikos\source\repos\NewsPortal\NewsPortal\Controllers\NewsController.cs:line 46
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+News
+Index
+8/19/2020 10:31:51 AM
