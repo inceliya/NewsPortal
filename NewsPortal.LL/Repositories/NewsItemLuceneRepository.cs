@@ -62,9 +62,6 @@ namespace NewsPortal.LL.Repositories
 
         public IEnumerable<NewsItem> Search(string search)
         {
-            if (string.IsNullOrEmpty(search.Trim()))
-                return new List<NewsItem>();
-
             using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
             {
                 using (var searcher = new IndexSearcher(FSDirectory, false))

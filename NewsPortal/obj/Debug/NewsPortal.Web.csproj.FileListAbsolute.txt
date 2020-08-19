@@ -1710,3 +1710,8 @@ D:\апап\NewsPortal\NewsPortal\bin\Lucene.Net.dll
 D:\апап\NewsPortal\NewsPortal\bin\NewsPortal.LL.pdb
 D:\апап\NewsPortal\NewsPortal\bin\Lucene.Net.pdb
 D:\апап\NewsPortal\NewsPortal\bin\Lucene.Net.xml
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.LL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\Lucene.Net.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\NewsPortal.LL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\Lucene.Net.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal\bin\Lucene.Net.xml

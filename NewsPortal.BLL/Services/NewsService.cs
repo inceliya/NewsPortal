@@ -38,12 +38,7 @@ namespace NewsPortal.BLL.Services
             List<NewsItem> news = null;
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
-                news = NewsRepository.GetAllByFilter(Filter(filter), search).ToList();
-
-                Sort(sort, ref news);
-
-                if (reverse)
-                    news.Reverse();
+                news = NewsRepository.GetAllByFilter(Filter(filter), Sort(sort), search, reverse).ToList();
             }
 
             return news;
@@ -65,31 +60,23 @@ namespace NewsPortal.BLL.Services
             }
         }
 
-        private void Sort(string sort, ref List<NewsItem> news)
+        private Expression<Func<NewsItem, object>> Sort(string sort)
         {
-            Func<NewsItem, object> sortParam;
+            Expression<Func<NewsItem, object>> sortParam;
             switch (sort)
             {
                 case "title":
                     sortParam = n => n.Title.ToLower();
                     break;
                 case "description":
-                    sortParam = n => GetText(n.Description.ToLower());
+                    sortParam = n => n.Description.ToLower();
                     break;
                 case "date":
                 default:
                     sortParam = n => n.PublicationDate;
                     break;
             }
-            news = news.OrderBy(sortParam).ToList();
-        }
-
-        private Expression<Func<NewsItem, bool>> Search(string search)
-        {
-            if (!string.IsNullOrEmpty(search))
-                return n => n.Title.ToLower().Contains(search.ToLower()) || GetText(n.Description.ToLower()).Contains(search.ToLower());
-            else
-                return n => n.Title != "";
+            return sortParam;
         }
 
         private string GetText(string text)

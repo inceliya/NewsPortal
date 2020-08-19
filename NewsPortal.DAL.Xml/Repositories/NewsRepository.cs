@@ -50,10 +50,19 @@ namespace NewsPortal.DAL.Xml.Repositories
             return News;
         }
 
-        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, string search)
+        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, object>> sort, string search, bool reverse)
         {
-            if (!string.IsNullOrEmpty(search.Trim())) return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter);
-            return  News.AsQueryable().Where(filter);
+            if (!string.IsNullOrEmpty(search.Trim()))
+                if (reverse)
+                    return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter).OrderByDescending(sort);
+                else
+                    return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter).OrderBy(sort);
+
+            News.AsQueryable().Where(filter);
+            if (reverse)
+                return News.AsQueryable().OrderByDescending(sort);
+            else
+                return News.AsQueryable().OrderBy(sort);
         }
 
         public void Add(NewsItem newsItem)

@@ -297,3 +297,8 @@ D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.dll
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.LL.pdb
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.pdb
 D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.xml
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.LL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.LL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.DAL\bin\Debug\Lucene.Net.xml

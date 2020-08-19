@@ -11,3 +11,16 @@ D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csproj.CoreCompileI
 D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csproj.CopyComplete
 D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.dll
 D:\апап\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.LL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.LL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.BLL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.BLL.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.pdb
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.xml
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csprojAssemblyReference.cache
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csproj.CoreCompileInputs.cache
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csproj.CopyComplete
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.dll
+C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.pdb

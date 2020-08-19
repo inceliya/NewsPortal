@@ -13,11 +13,18 @@ namespace NewsPortal.DAL.Repositories
 {
     public class NewsRepository : Repository<NewsItem>, INewsRepository
     {
-        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, string search)
+        public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, object>> sort, string search, bool reverse)
         {
-            if (!string.IsNullOrEmpty(search.Trim())) return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter);
-            var queryResult = Session.QueryOver<NewsItem>().Where(filter);
-            return queryResult.List();
+            if (!string.IsNullOrEmpty(search.Trim()))
+                if (reverse)
+                    return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter).OrderByDescending(sort);
+                else
+                    return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter).OrderBy(sort);
+
+            if (reverse)
+                return Session.QueryOver<NewsItem>().Where(filter).OrderBy(sort).Desc.List();
+            else
+                return Session.QueryOver<NewsItem>().Where(filter).OrderBy(sort).Asc.List();
         }
         public override void Add(NewsItem item)
         {
