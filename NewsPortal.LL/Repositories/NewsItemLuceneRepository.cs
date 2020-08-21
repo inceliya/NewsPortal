@@ -18,12 +18,13 @@ namespace NewsPortal.LL.Repositories
 {
     public class NewsItemLuceneRepository : ILuceneRepository<NewsItem>
     {
-        public string Directory {  get; private set; }
+        public string Directory { get; private set; }
 
         public NewsItemLuceneRepository()
         {
             Directory = HttpContext.Current.Server.MapPath(ConfigurationManager.AppSettings["LucenePath"]);
         }
+
         public void Save(NewsItem item)
         {
             using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
@@ -37,30 +38,18 @@ namespace NewsPortal.LL.Repositories
                 }
             }
         }
-        public void Update(NewsItem item)
+
+        public void Delete(int id)
         {
             using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
             {
                 using (var writer = new IndexWriter(FSDirectory, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
                 {
-                    var termQuery = new TermQuery(new Term("Id", item.Id.ToString()));
+                    var termQuery = new TermQuery(new Term("Id", id.ToString()));
                     writer.DeleteDocuments(termQuery);
-                    writer.AddDocument(ToDocument(item));
                     writer.Optimize();
                 }
             }
-        }
-        public void Delete(int id)
-        {
-                using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
-                {
-                    using (var writer = new IndexWriter(FSDirectory, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
-                    {
-                        var termQuery = new TermQuery(new Term("Id", id.ToString()));
-                        writer.DeleteDocuments(termQuery);
-                        writer.Optimize();
-                    }
-                }
         }
 
         public IEnumerable<NewsItem> Search(string search)
@@ -68,17 +57,9 @@ namespace NewsPortal.LL.Repositories
             using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
             {
                 using (var searcher = new IndexSearcher(FSDirectory, false))
-                {                    
+                {
                     QueryParser parser = new MultiFieldQueryParser(Lucene.Net.Util.Version.LUCENE_30, new string[] { "Title", "Description" }, analyzer);
-                    Query query;
-                    try
-                    {
-                        query = parser.Parse(search.Trim());
-                    }
-                    catch (Exception)
-                    {
-                        query = parser.Parse(QueryParser.Escape(search.Trim()));
-                    }
+                    Query query = parser.Parse(search.Trim());
                     int limit = 100;
                     searcher.IndexReader.Reopen();
                     var hits = searcher.Search(query, limit).ScoreDocs;
@@ -93,6 +74,7 @@ namespace NewsPortal.LL.Repositories
                 }
             }
         }
+
         public NewsItem FromDocument(Document document)
         {
             var item = new NewsItem();
@@ -104,6 +86,7 @@ namespace NewsPortal.LL.Repositories
             item.Visibility = document.Get("Visibility").ToLower() == "true";
             return item;
         }
+
         public Document ToDocument(NewsItem item)
         {
             var document = new Document();
@@ -128,7 +111,8 @@ namespace NewsPortal.LL.Repositories
         }
 
         private FSDirectory fSDirectory;
-        private  FSDirectory FSDirectory
+
+        private FSDirectory FSDirectory
         {
             get
             {
@@ -136,13 +120,10 @@ namespace NewsPortal.LL.Repositories
                 {
                     fSDirectory = FSDirectory.Open(Directory);
                 }
+
                 if (IndexWriter.IsLocked(fSDirectory))
                 {
                     IndexWriter.Unlock(fSDirectory);
-                }
-                if (File.Exists(Path.Combine(Directory, "write.lock")))
-                {
-                    File.Delete(Path.Combine(Directory, "write.lock"));
                 }
                 return fSDirectory;
             }

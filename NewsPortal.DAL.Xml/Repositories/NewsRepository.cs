@@ -110,11 +110,11 @@ namespace NewsPortal.DAL.Xml.Repositories
             ItemsData.Save(FilePath);
             LuceneHelper.GetRepository<NewsItem>().Delete(id);
         }
+
         public void Refresh(IEnumerable<NewsItem> list)
         {
             var lucene = LuceneHelper.GetRepository<NewsItem>();
             lucene.DeleteAll();
-           // var list = GetAll();
             foreach (var item in list)
                 lucene.Save(item);
         }

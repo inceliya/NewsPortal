@@ -53,7 +53,7 @@ namespace NewsPortal.BLL.Services
                 case "today":
                     return n => n.PublicationDate.Day == DateTime.Today.Day;
                 case "yesterday":
-                    return n => n.PublicationDate.Day == DateTime.Today.AddDays(-1).Day && n.PublicationDate.Day <= DateTime.Today.Day;
+                    return n => n.PublicationDate.Day == DateTime.Today.AddDays(-1).Day;
                 case "week":
                     return n => n.PublicationDate.Day >= DateTime.Today.AddDays(-7).Day && n.PublicationDate.Day <= DateTime.Today.Day;
                 case "all":

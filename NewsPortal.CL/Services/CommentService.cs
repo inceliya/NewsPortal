@@ -45,7 +45,14 @@ namespace NewsPortal.CL.Services
 
         public List<Comment> GetAll()
         {
-            var comments = CommentServiceBLL.GetAll();
+            var comments = CacheRepository.GetSeveral("AllComments");
+
+            if(comments == null)
+            {
+                comments = CommentServiceBLL.GetAll();
+                CacheRepository.Add(comments, "AllComments");
+            }
+
             return comments;
         }
 
@@ -54,6 +61,7 @@ namespace NewsPortal.CL.Services
             CommentServiceBLL.Add(comment);
             CacheRepository.Add(comment, $"Comment-{comment.Id}");
             CacheRepository.Delete($"Comments-{comment.NewsId}");
+            CacheRepository.Delete("AllComments");
         }
 
         public void Update(Comment comment)
@@ -61,6 +69,7 @@ namespace NewsPortal.CL.Services
             CommentServiceBLL.Update(comment);
             CacheRepository.Update(comment, $"Comment-{comment.Id}");
             CacheRepository.Delete($"Comments-{comment.NewsId}");
+            CacheRepository.Delete("AllComments");
         }
 
         public void Delete(int id)
@@ -76,6 +85,7 @@ namespace NewsPortal.CL.Services
 
             CommentServiceBLL.Delete(id);
             CacheRepository.Delete($"Comment-{id}");
+            CacheRepository.Delete("AllComments");
         }
     }
 }

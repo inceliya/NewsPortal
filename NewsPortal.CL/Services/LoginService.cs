@@ -39,7 +39,12 @@ namespace NewsPortal.CL.Services
 
         public List<Login> GetAll()
         {
-            var users = LoginServiceBLL.GetAll();
+            var users = CacheRepository.GetSeveral("AllUsers");
+            if (users == null)
+            {
+                users = LoginServiceBLL.GetAll();
+                CacheRepository.Add(users, "AllUsers");
+            }
             return users;
         }
 
@@ -47,18 +52,21 @@ namespace NewsPortal.CL.Services
         {
             LoginServiceBLL.Add(user);
             CacheRepository.Add(user, $"User-{user.Id}");
+            CacheRepository.Delete("AllUsers");
         }
 
         public void Update(Login user)
         {
             LoginServiceBLL.Update(user);
             CacheRepository.Update(user, $"User-{user.Id}");
+            CacheRepository.Delete("AllUsers");
         }
 
         public void Delete(int id)
         {
             LoginServiceBLL.Delete(id);
             CacheRepository.Delete($"User-{id}");
+            CacheRepository.Delete("AllUsers");
         }
     }
 }

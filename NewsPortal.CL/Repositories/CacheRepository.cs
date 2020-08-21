@@ -25,6 +25,12 @@ namespace NewsPortal.CL.Repositories
             return memoryCache.Get(key) as List<T>;
         }
 
+        public List<KeyValuePair<string, object>> GetKeyValuePairs()
+        {
+            MemoryCache memoryCache = MemoryCache.Default;
+            return memoryCache.AsEnumerable().ToList();
+        }
+
         public bool Add(T item, string key)
         {
             MemoryCache memoryCache = MemoryCache.Default;
@@ -47,6 +53,18 @@ namespace NewsPortal.CL.Repositories
         {
             MemoryCache memoryCache = MemoryCache.Default;
             memoryCache.Remove(key);
+        }
+
+        public void DeleteByPartOfTheKey(string key)
+        {
+            foreach (var pair in GetKeyValuePairs())
+            {
+                if (pair.Key.Contains(key))
+                {
+                    Delete(pair.Key);
+                    break;
+                }
+            }
         }
     }
 }

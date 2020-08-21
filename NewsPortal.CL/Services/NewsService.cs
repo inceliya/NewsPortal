@@ -34,8 +34,14 @@ namespace NewsPortal.CL.Services
 
         public List<NewsItem> GetAll(string filter, string sort, string search, bool reverse)
         {
+            var news = CacheRepository.GetSeveral($"AllNews-{filter}-{sort}-{search}-{reverse}");
+            if (news == null)
+            {
+                CacheRepository.DeleteByPartOfTheKey("AllNews");
 
-            var news = NewsServiceBLL.GetAll(filter, sort, search, reverse);
+                news = NewsServiceBLL.GetAll(filter, sort, search, reverse);
+                CacheRepository.Add(news, $"AllNews-{filter}-{sort}-{search}-{reverse}");
+            }
             return news;
         }
 
@@ -43,18 +49,24 @@ namespace NewsPortal.CL.Services
         {
             NewsServiceBLL.Add(newsItem);
             CacheRepository.Add(newsItem, $"News-{newsItem.Id}");
+
+            CacheRepository.DeleteByPartOfTheKey("AllNews");
         }
 
         public void Update(NewsItem newsItem)
         {
             NewsServiceBLL.Update(newsItem);
             CacheRepository.Update(newsItem, $"News-{newsItem.Id}");
+
+            CacheRepository.DeleteByPartOfTheKey("AllNews");
         }
 
         public void Delete(int id)
         {
             NewsServiceBLL.Delete(id);
             CacheRepository.Delete($"News-{id}");
+
+            CacheRepository.DeleteByPartOfTheKey("AllNews");
         }
     }
 }
