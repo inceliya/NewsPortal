@@ -24,3 +24,15 @@ C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csp
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csproj.CopyComplete
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.dll
 C:\Users\nikos\source\repos\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.LL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.LL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.BLL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\bin\Debug\NewsPortal.BLL.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.pdb
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\bin\Debug\Lucene.Net.xml
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.csproj.CopyComplete
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.dll
+D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.LL\obj\Debug\NewsPortal.LL.pdb

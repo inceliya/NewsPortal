@@ -1,4 +1,5 @@
 ﻿using NewsPortal.BLL.Entities;
+using NewsPortal.BLL.Helpers;
 using NewsPortal.BLL.Repositories;
 using NewsPortal.BLL.UnitOfWork;
 using NewsPortal.CL.Repositories;
@@ -15,10 +16,10 @@ namespace NewsPortal.CL.Services
         private CacheRepository<NewsItem> CacheRepository { get; }
         private BLL.Services.NewsService NewsServiceBLL { get; }
 
-        public NewsService(IUnitOfWorkFactory unitOfWorkFactory, INewsRepository newsRepository)
+        public NewsService(IUnitOfWorkFactory unitOfWorkFactory, INewsRepository newsRepository, ILuceneHelper luceneHelper)
         {
             CacheRepository = new CacheRepository<NewsItem>();
-            NewsServiceBLL = new BLL.Services.NewsService(unitOfWorkFactory, newsRepository);
+            NewsServiceBLL = new BLL.Services.NewsService(unitOfWorkFactory, newsRepository, luceneHelper);
         }
 
         public NewsItem Get(int id)

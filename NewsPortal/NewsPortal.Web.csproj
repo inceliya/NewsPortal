@@ -795,6 +795,10 @@
       <Project>{5a557faf-098e-4af9-b3df-44f20aa1404d}</Project>
       <Name>NewsPortal.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NewsPortal.LL\NewsPortal.LL.csproj">
+      <Project>{1b86a29b-d543-446d-a720-22f6d8333037}</Project>
+      <Name>NewsPortal.LL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

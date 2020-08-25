@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
+using NewsPortal.BLL.Helpers;
 
 namespace NewsPortal.Controllers
 {
@@ -18,9 +19,9 @@ namespace NewsPortal.Controllers
         private NewsService NewsService { get; }
         private CommentService CommentService { get; }
 
-        public CommentController(IUnitOfWorkFactory unitOfWorkFactory, INewsRepository newsRepository, ICommentRepository commentRepositpry)
+        public CommentController(IUnitOfWorkFactory unitOfWorkFactory, INewsRepository newsRepository, ICommentRepository commentRepositpry, ILuceneHelper luceneHelper)
         {
-            NewsService = new NewsService(unitOfWorkFactory, newsRepository);
+            NewsService = new NewsService(unitOfWorkFactory, newsRepository, luceneHelper);
             CommentService = new CommentService(unitOfWorkFactory, commentRepositpry);
         }
 

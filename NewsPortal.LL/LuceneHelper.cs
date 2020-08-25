@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace NewsPortal.LL
 {
-    public static class LuceneHelper
+    public class LuceneHelper : BLL.Helpers.ILuceneHelper
     {
-        public static ILuceneRepository<T> GetRepository<T>()
+        public BLL.Repositories.ILuceneRepository<T> GetRepository<T>()
         {
-            return new NewsItemLuceneRepository() as ILuceneRepository<T>;
+            return new NewsItemLuceneRepository() as BLL.Repositories.ILuceneRepository<T>;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using NewsPortal.BLL.Entities;
+using NewsPortal.BLL.Helpers;
 using NewsPortal.BLL.Repositories;
 using NewsPortal.BLL.UnitOfWork;
 using System;
@@ -16,11 +17,13 @@ namespace NewsPortal.BLL.Services
     {
         private IUnitOfWorkFactory UnitOfWorkFactory { get; }
         private INewsRepository NewsRepository { get; }
+        private ILuceneHelper LuceneHelper { get; }
 
-        public NewsService(IUnitOfWorkFactory uowf, INewsRepository newsRepository)
+        public NewsService(IUnitOfWorkFactory uowf, INewsRepository newsRepository, ILuceneHelper luceneHelper)
         {
             UnitOfWorkFactory = uowf;
             NewsRepository = newsRepository;
+            LuceneHelper = luceneHelper;
             NewsRepository.Refresh(GetAll());
         }
 
@@ -81,25 +84,13 @@ namespace NewsPortal.BLL.Services
             return sortParam;
         }
 
-        private string GetText(string text)
-        {
-            var r = new Regex(@"<[^>]*>");
-            var matches = r.Matches(text);
-            for (int i = 0; i < matches.Count; i++)
-            {
-                int index = text.IndexOf(matches[i].Value.ToString());
-                text = text.Remove(index, matches[i].Value.Length);
-
-            }
-            return text;
-        }
-
         public void Add(NewsItem newsItem)
         {
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
                 NewsRepository.Add(newsItem);
                 unitOfWork.Commit();
+                LuceneHelper.GetRepository<NewsItem>().Save(newsItem);
             }
         }
 
@@ -109,6 +100,7 @@ namespace NewsPortal.BLL.Services
             {
                 NewsRepository.Update(newsItem);
                 unitOfWork.Commit();
+                LuceneHelper.GetRepository<NewsItem>().Save(newsItem);
             }
         }
 
@@ -118,6 +110,7 @@ namespace NewsPortal.BLL.Services
             {
                 NewsRepository.Delete(id);
                 unitOfWork.Commit();
+                LuceneHelper.GetRepository<NewsItem>().Delete(id);
             }
         }
     }

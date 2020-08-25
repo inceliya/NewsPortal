@@ -52,7 +52,6 @@
   <ItemGroup>
     <Compile Include="LuceneHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ILuceneRepository.cs" />
     <Compile Include="Repositories\NewsItemLuceneRepository.cs" />
   </ItemGroup>
   <ItemGroup>

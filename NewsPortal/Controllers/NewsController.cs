@@ -22,6 +22,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
+using NewsPortal.BLL.Helpers;
 
 namespace NewsPortal.Controllers
 {
@@ -32,9 +33,9 @@ namespace NewsPortal.Controllers
         private NewsService NewsService;
         private CommentService CommentService;
 
-        public NewsController(IUnitOfWorkFactory unitOfWorkFactory, INewsRepository newsRepository, ICommentRepository commentRepositpry)
+        public NewsController(IUnitOfWorkFactory unitOfWorkFactory, INewsRepository newsRepository, ICommentRepository commentRepositpry, ILuceneHelper luceneHelper)
         {
-            NewsService = new NewsService(unitOfWorkFactory, newsRepository);
+            NewsService = new NewsService(unitOfWorkFactory, newsRepository, luceneHelper);
             CommentService = new CommentService(unitOfWorkFactory, commentRepositpry);
         }
 

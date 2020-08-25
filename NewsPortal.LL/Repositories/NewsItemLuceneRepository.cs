@@ -16,7 +16,7 @@ using System.Web;
 
 namespace NewsPortal.LL.Repositories
 {
-    public class NewsItemLuceneRepository : ILuceneRepository<NewsItem>
+    public class NewsItemLuceneRepository : BLL.Repositories.ILuceneRepository<NewsItem>
     {
         public string Directory { get; private set; }
 

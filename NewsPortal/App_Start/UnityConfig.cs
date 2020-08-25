@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
 using System.Configuration;
+using NewsPortal.BLL.Helpers;
 
 namespace NewsPortal
 {
@@ -15,6 +16,7 @@ namespace NewsPortal
         {
             var container = new UnityContainer();
 
+            container.RegisterType<ILuceneHelper, LL.LuceneHelper>();
             switch (Connection)
             {
                 case "xml":
