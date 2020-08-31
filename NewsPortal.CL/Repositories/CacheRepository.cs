@@ -39,8 +39,12 @@ namespace NewsPortal.CL.Repositories
 
         public bool Add(List<T> items, string key)
         {
-            MemoryCache memotyCache = MemoryCache.Default;
-            return memotyCache.Add(key, items, DateTime.Now.AddMinutes(Minutes));
+            if (items != null)
+            {
+                MemoryCache memotyCache = MemoryCache.Default;
+                return memotyCache.Add(key, items, DateTime.Now.AddMinutes(Minutes));
+            }
+            return false;
         }
 
         public void Update(T item, string key)

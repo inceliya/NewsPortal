@@ -24,7 +24,7 @@ namespace NewsPortal.BLL.Services
             UnitOfWorkFactory = uowf;
             NewsRepository = newsRepository;
             LuceneHelper = luceneHelper;
-            NewsRepository.Refresh(GetAll());
+            Refresh(GetAll());
         }
 
         public NewsItem Get(int id)
@@ -43,7 +43,10 @@ namespace NewsPortal.BLL.Services
             List<NewsItem> news = null;
             using (IUnitOfWork unitOfWork = UnitOfWorkFactory.Create())
             {
-                news = NewsRepository.GetAllByFilter(Filter(filter), Sort(sort), search, reverse).ToList();
+                if (string.IsNullOrEmpty(search))
+                    news = NewsRepository.GetAllByFilter(Filter(filter), Sort(sort), search, reverse).ToList();
+                else
+                    news = LuceneHelper.GetRepository<NewsItem>().Search(Filter(filter), Sort(sort), search, reverse).ToList();
             }
 
             return news;
@@ -112,6 +115,13 @@ namespace NewsPortal.BLL.Services
                 unitOfWork.Commit();
                 LuceneHelper.GetRepository<NewsItem>().Delete(id);
             }
+        }
+        public void Refresh(IEnumerable<NewsItem> list)
+        {
+            var lucene = LuceneHelper.GetRepository<NewsItem>();
+            lucene.DeleteAll();
+            foreach (var item in list)
+                lucene.Save(item);
         }
     }
 }

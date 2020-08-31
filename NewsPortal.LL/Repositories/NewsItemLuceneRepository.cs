@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
@@ -52,7 +53,7 @@ namespace NewsPortal.LL.Repositories
             }
         }
 
-        public IEnumerable<NewsItem> Search(string search)
+        public IEnumerable<NewsItem> Search(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, object>> sort, string search, bool reverse)
         {
             using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
             {
@@ -70,7 +71,10 @@ namespace NewsPortal.LL.Repositories
                         list.Add(FromDocument(foundDoc));
                         searcher.IndexReader.Reopen();
                     }
-                    return list;
+                    if(!reverse)
+                        return list.AsQueryable().Where(filter).OrderBy(sort);
+                    else
+                        return list.AsQueryable().Where(filter).OrderByDescending(sort);
                 }
             }
         }

@@ -326,3 +326,4 @@ D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPo
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.csproj.CopyComplete
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.dll
 D:\Users10\Александр\Desktop\ISM\1NewsPortal\ркуз\NewsPortal\NewsPortal.DAL\obj\Debug\NewsPortal.DAL.pdb
+D:\апап\NewsPortal\NewsPortal.DAL\bin\Debug\NewsPortal.DAL.dll.config
