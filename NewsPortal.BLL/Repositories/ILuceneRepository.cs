@@ -12,7 +12,7 @@ namespace NewsPortal.BLL.Repositories
     public interface ILuceneRepository<T>
     {
         string Directory { get; }
-        IEnumerable<T> Search(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, object>> sort, string search, bool reverse);
+        IEnumerable<T> Search(string filter, string sort, string search, bool reverse);
         void Save(T item);
         void Delete(int id);
         void DeleteAll();

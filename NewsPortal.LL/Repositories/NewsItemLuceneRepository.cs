@@ -53,7 +53,7 @@ namespace NewsPortal.LL.Repositories
             }
         }
 
-        public IEnumerable<NewsItem> Search(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, object>> sort, string search, bool reverse)
+        public IEnumerable<NewsItem> Search(string filter, string sort, string search, bool reverse)
         {
             using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
             {
@@ -63,7 +63,7 @@ namespace NewsPortal.LL.Repositories
                     Query query = parser.Parse(search.Trim());
                     int limit = 100;
                     searcher.IndexReader.Reopen();
-                    var hits = searcher.Search(query, limit).ScoreDocs;
+                    var hits = searcher.Search(query, Filter(filter), limit, Sort(sort, reverse)).ScoreDocs;
                     var list = new List<NewsItem>();
                     foreach (var hit in hits)
                     {
@@ -71,10 +71,11 @@ namespace NewsPortal.LL.Repositories
                         list.Add(FromDocument(foundDoc));
                         searcher.IndexReader.Reopen();
                     }
-                    if(!reverse)
+                    return list;
+                   /* if(!reverse)
                         return list.AsQueryable().Where(filter).OrderBy(sort);
                     else
-                        return list.AsQueryable().Where(filter).OrderByDescending(sort);
+                        return list.AsQueryable().Where(filter).OrderByDescending(sort);*/
                 }
             }
         }
@@ -113,7 +114,45 @@ namespace NewsPortal.LL.Repositories
                 }
             }
         }
+        private Filter Filter(string filter)
+        {
+            switch (filter)
+            {
+                case "today":
+                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateTime.Now.Date.ToString(),
+                        DateTime.Now.Date.AddDays(1).ToString(), true, true);
+                    
+                case "yesterday":
+                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateTime.Now.Date.AddDays(-1).ToString(),
+                        DateTime.Now.Date.ToString(), true, true);
+                case "week":
+                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateTime.Now.Date.AddDays(-7).ToString(),
+                        DateTime.Now.Date.ToString(), true, true);
+                case "all":
+                default:
+                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateTime.MinValue.ToString(),
+                        DateTime.MaxValue.ToString(), true, true);
+            }
+        }
 
+        private Sort Sort(string sort, bool reverse)
+        {
+           SortField sortParam;
+            switch (sort)
+            {
+                case "title":
+                    sortParam = new SortField("Title", SortField.STRING, !reverse);
+                    break;
+                case "description":
+                    sortParam = new SortField("Description", SortField.STRING, !reverse);
+                    break;
+                case "date":
+                default:
+                    sortParam = new SortField("PublicationDate", SortField.STRING, reverse); 
+                    break;
+            }
+            return new Sort(sortParam);
+        }
         private FSDirectory fSDirectory;
 
         private FSDirectory FSDirectory

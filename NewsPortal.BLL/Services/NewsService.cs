@@ -46,7 +46,7 @@ namespace NewsPortal.BLL.Services
                 if (string.IsNullOrEmpty(search))
                     news = NewsRepository.GetAllByFilter(Filter(filter), Sort(sort), search, reverse).ToList();
                 else
-                    news = LuceneHelper.GetRepository<NewsItem>().Search(Filter(filter), Sort(sort), search, reverse).ToList();
+                    news = LuceneHelper.GetRepository<NewsItem>().Search(filter, sort, search, reverse).ToList();
             }
 
             return news;
