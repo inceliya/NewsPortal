@@ -63,7 +63,7 @@ namespace NewsPortal.LL.Repositories
                     Query query = parser.Parse(search.Trim());
                     int limit = 100;
                     searcher.IndexReader.Reopen();
-                    var hits = searcher.Search(query, Filter(filter), limit, Sort(sort, reverse)).ScoreDocs;
+                    var hits = searcher.Search(query,null, limit, Sort(sort, reverse)).ScoreDocs;
                     var list = new List<NewsItem>();
                     foreach (var hit in hits)
                     {
