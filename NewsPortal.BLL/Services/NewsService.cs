@@ -57,11 +57,11 @@ namespace NewsPortal.BLL.Services
             switch (filter)
             {
                 case "today":
-                    return n => n.PublicationDate.Day == DateTime.Today.Day;
+                    return n => n.PublicationDate.Date == DateTime.Today;
                 case "yesterday":
-                    return n => n.PublicationDate.Day == DateTime.Today.AddDays(-1).Day;
+                    return n => n.PublicationDate.Date == DateTime.Today.AddDays(-1);
                 case "week":
-                    return n => n.PublicationDate.Day >= DateTime.Today.AddDays(-7).Day && n.PublicationDate.Day <= DateTime.Today.Day;
+                    return n => n.PublicationDate.Date >= DateTime.Today.AddDays(-7);
                 case "all":
                 default:
                     return n => n.PublicationDate <= DateTime.MaxValue;

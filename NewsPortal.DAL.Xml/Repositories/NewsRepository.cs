@@ -59,11 +59,10 @@ namespace NewsPortal.DAL.Xml.Repositories
             //    else
             //        return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter).OrderBy(sort);
 
-            News.AsQueryable().Where(filter);
             if (reverse)
-                return News.AsQueryable().OrderByDescending(sort);
+                return News.AsQueryable().Where(filter).OrderByDescending(sort);
             else
-                return News.AsQueryable().OrderBy(sort);
+                return News.AsQueryable().Where(filter).OrderBy(sort);
         }
 
         public void Add(NewsItem newsItem)
