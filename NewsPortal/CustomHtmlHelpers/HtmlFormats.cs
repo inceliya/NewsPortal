@@ -19,8 +19,10 @@ namespace NewsPortal.CustomHtmlHelpers
             filter = request.Params["filter"];
             sort = request.Params["sort"];
             search = request.Params["search"];
+
             if (!string.IsNullOrEmpty(request.Params["reverse"]))
                 reverse = (request.Params["reverse"].ToLower() == "true");
+
             if (!string.IsNullOrEmpty(request.Params["page"]))
             {
                 int tmp;
@@ -59,12 +61,14 @@ namespace NewsPortal.CustomHtmlHelpers
         public string GetParams()
         {
             string res = "";
+
             res += !string.IsNullOrEmpty(filter) ? $"filter={filter}&" : "";
             res += !string.IsNullOrEmpty(sort) ? $"sort={sort}&" : "";
             res += reverse != null ? $"reverse={reverse}&" : "";
             res += page != null ? $"page={page}&" : "";
             res += !string.IsNullOrEmpty(search) ? $"search={search}&" : "";
             if (!string.IsNullOrEmpty(res)) res = "?" + res.Substring(0, res.Length - 1);
+
             return res;
         }
     }

@@ -72,10 +72,6 @@ namespace NewsPortal.LL.Repositories
                         searcher.IndexReader.Reopen();
                     }
                     return list;
-                   /* if(!reverse)
-                        return list.AsQueryable().Where(filter).OrderBy(sort);
-                    else
-                        return list.AsQueryable().Where(filter).OrderByDescending(sort);*/
                 }
             }
         }

@@ -19,15 +19,15 @@ namespace NewsPortal.ViewModels
         public string Title { get; set; }
 
         [AllowHtml]
-        [Required(ErrorMessageResourceType = typeof(Resources.Resource),
+        [Required(ErrorMessageResourceType = typeof(Resources.Resource), 
             ErrorMessageResourceName = "DescriptionRequired")]
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         public string Image { get; set; }
 
-        [Required(ErrorMessageResourceType = typeof(Resources.Resource),
-                  ErrorMessageResourceName = "PublicationDateRequired")]
+        [Required(ErrorMessageResourceType = typeof(Resources.Resource), 
+            ErrorMessageResourceName = "PublicationDateRequired")]
         [DataType(DataType.Date)]
         [Display(Name = "Creation Date")]
         [DisplayFormat(DataFormatString = "{0:dd'/'MM'/'yyyy}")]

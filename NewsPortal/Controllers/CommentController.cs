@@ -43,9 +43,6 @@ namespace NewsPortal.Controllers
         [ExceptionLogger]
         public ActionResult AddComment(string author, string text, int id, string controllerName)
         {
-            //var repository = new NewsRepository();
-            //var news = repository.GetNewsById(id);
-
             var newsItem = NewsService.Get(id);
 
             var comment = new Comment()

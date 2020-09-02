@@ -15,12 +15,6 @@ namespace NewsPortal.DAL.Repositories
     {
         public IEnumerable<NewsItem> GetAllByFilter(Expression<Func<NewsItem, bool>> filter, Expression<Func<NewsItem, object>> sort, string search, bool reverse)
         {
-            //if (!string.IsNullOrEmpty(search.Trim()))
-            //    if (reverse)
-            //        return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter).OrderByDescending(sort);
-            //    else
-            //        return LuceneHelper.GetRepository<NewsItem>().Search(search).AsQueryable().Where(filter).OrderBy(sort);
-
             if (reverse)
                 return Session.QueryOver<NewsItem>().Where(filter).OrderBy(sort).Desc.List();
             else
@@ -29,17 +23,14 @@ namespace NewsPortal.DAL.Repositories
         public override void Add(NewsItem item)
         {
             base.Add(item);
-            //LuceneHelper.GetRepository<NewsItem>().Save(item);
         }
         public override void Update(NewsItem item)
         {
             base.Update(item);
-            //LuceneHelper.GetRepository<NewsItem>().Save(item);
         }
         public override void Delete(int id)
         {
             base.Delete(id);
-            //LuceneHelper.GetRepository<NewsItem>().Delete(id);
         }
 
         public void Refresh(IEnumerable<NewsItem> list)
