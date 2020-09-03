@@ -63,7 +63,7 @@ namespace NewsPortal.LL.Repositories
                     Query query = parser.Parse(search.Trim());
                     int limit = 100;
                     searcher.IndexReader.Reopen();
-                    var hits = searcher.Search(query,null, limit, Sort(sort, reverse)).ScoreDocs;
+                    var hits = searcher.Search(query, Filter(filter), limit, Sort(sort, reverse)).ScoreDocs;
                     var list = new List<NewsItem>();
                     foreach (var hit in hits)
                     {
@@ -83,7 +83,7 @@ namespace NewsPortal.LL.Repositories
             item.Title = document.Get("Title");
             item.Description = document.Get("Description");
             item.Image = document.Get("Image");
-            item.PublicationDate = DateTime.Parse(document.Get("PublicationDate"));
+            item.PublicationDate = FromString(document.Get("PublicationDate"));
             item.Visibility = document.Get("Visibility").ToLower() == "true";
             return item;
         }
@@ -95,11 +95,17 @@ namespace NewsPortal.LL.Repositories
             document.Add(new Field("Title", item.Title, Field.Store.YES, Field.Index.ANALYZED));
             document.Add(new Field("Description", item.Description, Field.Store.YES, Field.Index.ANALYZED));
             document.Add(new Field("Image", item.Image, Field.Store.YES, Field.Index.NOT_ANALYZED));
-            document.Add(new Field("PublicationDate", item.PublicationDate.ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
+            document.Add(new Field("PublicationDate", DateString(item.PublicationDate), Field.Store.YES, Field.Index.NOT_ANALYZED));
             document.Add(new Field("Visibility", item.Visibility.ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
             return document;
         }
-
+        private string DateString(DateTime date) =>
+             $"{date.Year}.{date.Month}.{date.Day}.{date.Hour}.{date.Minute}";
+        private DateTime FromString(string str)
+        {
+            var array = str.Split('.');
+            return new DateTime(int.Parse(array[0]), int.Parse(array[1]), int.Parse(array[2]), int.Parse(array[3]), int.Parse(array[4]), 0);
+        }
         public void DeleteAll()
         {
             using (var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
@@ -115,19 +121,19 @@ namespace NewsPortal.LL.Repositories
             switch (filter)
             {
                 case "today":
-                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateTime.Now.Date.ToString(),
-                        DateTime.Now.Date.AddDays(1).ToString(), true, true);
+                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateString(DateTime.Now.Date),
+                         DateString(DateTime.Now.Date.AddDays(1)), true, true);
                     
                 case "yesterday":
-                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateTime.Now.Date.AddDays(-1).ToString(),
-                        DateTime.Now.Date.ToString(), true, true);
+                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateString(DateTime.Now.Date.AddDays(-1)),
+                         DateString(DateTime.Now.Date), true, true);
                 case "week":
-                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateTime.Now.Date.AddDays(-7).ToString(),
-                        DateTime.Now.Date.ToString(), true, true);
+                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateString(DateTime.Now.Date.AddDays(-7)),
+                         DateString(DateTime.Now.Date), true, true);
                 case "all":
                 default:
-                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateTime.MinValue.ToString(),
-                        DateTime.MaxValue.ToString(), true, true);
+                    return FieldCacheRangeFilter.NewStringRange("PublicationDate", DateString(DateTime.MinValue),
+                         DateString(DateTime.MaxValue), true, true);
             }
         }
 
